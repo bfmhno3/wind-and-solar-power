@@ -332,3 +332,4 @@ TSWLatexianTemp*
 
 build/
 *.pdf
+tmp/
