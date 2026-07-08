@@ -1,0 +1,685 @@
+\chapter{课件计算题习题集}
+
+\begin{introduction}
+\item 本章整理 others 目录中 3 份课件 PDF 的显式计算题、课堂计算例和可直接改写为题目的公式应用。
+\item 每道题前的源码注释给出索引、来源文件、PDF 页码、课件小节和核对状态。
+\item 课件只给公式而未给具体数值条件时，解答中只保留公式路径，不补造数据。
+\end{introduction}
+
+\section{绪论}
+
+% index: calc_01_intro_p041_01 | source=others/01_绪论.pdf | page=41 | slide=1.1.3 能源结构-能源弹性系数 | status=checked
+\begin{problem}[能源消费或生产弹性系数]\label{exer:calc_01_intro_p041_01}
+已知计算期间能源消费或生产增量为 \(\Delta E\)，计算起始年的能源消费或生产量为 \(E_0\)；同期国内生产总值增量为 \(\Delta G\)，计算起始年的国内生产总值为 \(G_0\)。写出能源消费或生产弹性系数 \(e\) 的计算式，并说明各量含义。
+\end{problem}
+
+\begin{solution}
+课件给出的基本定义为能源消费或生产增长率与经济增长率之比：
+\begin{equation}
+e = \frac{\alpha}{\beta}
+  = \frac{\Delta E / E_0}{\Delta G / G_0}.
+\end{equation}
+式中，\(e\) 为能源消费或生产弹性系数，\(\alpha\) 为能源消费或生产增长率，\(\beta\) 为国内生产总值增长率。该页未给具体数值，计算时将题设中的 \(\Delta E\)、\(E_0\)、\(\Delta G\)、\(G_0\) 代入即可。
+\end{solution}
+
+% index: calc_01_intro_p087_01 | source=others/01_绪论.pdf | page=87 | slide=1.3.1 温室效应 | status=checked
+\begin{problem}[温室气体全球变暖潜能值查表]\label{exer:calc_01_intro_p087_01}
+根据课件中温室气体全球变暖潜能值表，列出 \(\qty{100}{a}\) 时间尺度下 \(CO_2\)、\(CH_4\)、\(N_2O\)、\(CF_4\)、\(C_2F_6\)、\(SF_6\) 的 GWP 值，并说明如何由温室气体质量换算为二氧化碳当量。
+\end{problem}
+
+\begin{solution}
+课件表中给出的 \(\qty{100}{a}\) 全球变暖潜能值分别为：
+\begin{equation*}
+\begin{aligned}
+GWP_{CO_2} &= 1, &
+GWP_{CH_4} &= 21, &
+GWP_{N_2O} &= 310,\\
+GWP_{CF_4} &= 6500, &
+GWP_{C_2F_6} &= 9200, &
+GWP_{SF_6} &= 23900.
+\end{aligned}
+\end{equation*}
+若某温室气体质量为 \(m\)，其二氧化碳当量按
+\begin{equation}
+m_{CO_2e} = m \cdot GWP
+\end{equation}
+换算。课件未给指定气体质量，因此本题只保留查表和换算关系。
+\end{solution}
+
+% index: calc_01_intro_p108_01 | source=others/01_绪论.pdf | page=108 | slide=1.3.4 碳核算 | status=checked
+\begin{problem}[质量平衡法碳核算]\label{exer:calc_01_intro_p108_01}
+某排放源采用质量平衡法核算温室气体排放量。设输入物料量为 \(M_I\)，输出物料量为 \(M_O\)，输入和输出物料含碳量分别为 \(CC_I\)、\(CC_O\)，碳质量转化为温室气体质量的转换系数为 \(w\)，全球变暖潜能值为 \(GWP\)。写出温室气体排放量 \(E_{GHG}\) 的计算式。
+\end{problem}
+
+\begin{solution}
+根据质量守恒，用输入物料含碳量减去输出物料含碳量，再乘以转换系数和全球变暖潜能值：
+\begin{equation}
+E_{GHG}
+= \left[\sum(M_I \cdot CC_I) - \sum(M_O \cdot CC_O)\right]\cdot w \cdot GWP.
+\end{equation}
+式中，\(E_{GHG}\) 的单位可按课件写作 \(\unit{tCO_2e}\)。该页未给具体物料数据，不能进一步数值化。
+\end{solution}
+
+\section{风力发电}
+
+% index: calc_03_wind_p024_01 | source=others/03_风力发电.pdf | page=24 | slide=3.1.4 风速 | status=checked
+\begin{problem}[风速随高度变化]\label{exer:calc_03_wind_p024_01}
+在地表至高空 \(\qty{1000}{m}\) 范围内，地面风速低，高空风速高。已知高度 \(h_1\) 处风速为 \(v_1\)，风切变指数为 \(\alpha\)。写出高度 \(h\) 处风速 \(v\) 的经验计算式。
+\end{problem}
+
+\begin{solution}
+课件给出的风速高度经验公式为：
+\begin{equation}
+v = v_1 \left(\frac{h}{h_1}\right)^\alpha.
+\end{equation}
+式中，\(h_1\) 为已知风速对应高度，\(h\) 为待求高度。课件未给数值，代入高度、风速和 \(\alpha\) 后即可求 \(v\)。
+\end{solution}
+
+% index: calc_03_wind_p027_01 | source=others/03_风力发电.pdf | page=27 | slide=3.1.5 风能 | status=checked
+\begin{problem}[气流动能]\label{exer:calc_03_wind_p027_01}
+设空气密度为 \(\rho\)，气流横截面积为 \(A\)，风速为 \(v\)，作用时间为 \(t\)。根据气流质量 \(m = \rho A v t\)，推导该时间内通过截面的气流动能 \(E\)。
+\end{problem}
+
+\begin{solution}
+气流动能由动能公式得到：
+\begin{equation}
+E = \frac{1}{2}mv^2.
+\end{equation}
+代入 \(m = \rho A v t\)，可得
+\begin{equation}
+E = \frac{1}{2}\rho A v t \cdot v^2
+  = \frac{1}{2}\rho A t v^3.
+\end{equation}
+式中，\(E\) 为动能，\(m\) 为质量，\(v\) 为速度，\(\rho\) 为空气密度，\(t\) 为时间，\(A\) 为气流横截面积。
+\end{solution}
+
+% index: calc_03_wind_p028_01 | source=others/03_风力发电.pdf | page=28 | slide=3.1.5 风能 | status=checked
+\begin{problem}[风能密度]\label{exer:calc_03_wind_p028_01}
+写出单位时间内通过单位截面积的风能密度 \(w\)、平均风能密度 \(\overline{w}\) 和有效风能密度 \(w_i\) 的表达式。
+\end{problem}
+
+\begin{solution}
+瞬时风能密度为：
+\begin{equation}
+w = \frac{1}{2}\rho v^3.
+\end{equation}
+观测时间为 \(T\) 时，平均风能密度为：
+\begin{equation}
+\overline{w}
+= \frac{1}{T}\int_0^T \frac{1}{2}\rho v^3\,dT.
+\end{equation}
+设 \(v_1\) 为风机启动风速，\(v_2\) 为停机风速，\(P'(v)\) 为风速概率分布函数，则有效风能密度为：
+\begin{equation}
+w_i
+= \int_{v_1}^{v_2}\frac{1}{2}\rho v^3 P'(v)\,dv.
+\end{equation}
+\end{solution}
+
+% index: calc_03_wind_p037_01 | source=others/03_风力发电.pdf | page=37 | slide=3.1.6 风电厂选址原则 | status=checked
+\begin{problem}[风资源丰富区指标判断]\label{exer:calc_03_wind_p037_01}
+按课件给出的风电厂选址原则，判断某场址是否属于风资源丰富地区时，应检查哪些计算指标？写出对应阈值。
+\end{problem}
+
+\begin{solution}
+课件给出的风资源丰富地区指标为：
+\begin{equation*}
+\begin{aligned}
+\overline{v} &> \qty{6}{m/s},\\
+t_{\qtyrange{3}{25}{m/s}} &> \qty{5000}{h},\\
+w_i &> \qty{300}{W/m^2}.
+\end{aligned}
+\end{equation*}
+其中，\(\overline{v}\) 为平均风速，\(t_{\qtyrange{3}{25}{m/s}}\) 为 \(\qtyrange{3}{25}{m/s}\) 有效风速小时数，\(w_i\) 为平均有效风能密度。
+\end{solution}
+
+% index: calc_03_wind_p040_01 | source=others/03_风力发电.pdf | page=40 | slide=风力发电机组选型和布置 | status=checked
+\begin{problem}[5.5-172 机组年发电量与减排量]\label{exer:calc_03_wind_p040_01}
+东方风电 5.5-172 型永磁直驱风电机组单机容量为 \(\qty{5}{MW}\)，叶轮直径为 \(\qty{172}{m}\)。课件给出在设计风速下，单台机组每年可输出 \(2200 \times 10^4\ \unit{kWh}\) 电能，可满足 \(\num{11000}\) 个三口之家提供一年的正常用电，可燃煤消耗 \(\qty{7150}{t}\)，减少二氧化碳排放 \(\qty{17300}{t}\)、二氧化硫排放 \(\qty{120}{t}\)、氮氧化物排放 \(\qty{180}{t}\)。整理该算例中的年度发电量和减排指标。
+\end{problem}
+
+\begin{solution}
+课件已经给出计算结果，本题按指标归纳：
+\begin{equation*}
+\begin{aligned}
+E_{\text{年}} &= 2200 \times 10^4\ \unit{kWh},\\
+N_{\text{家庭}} &= \num{11000},\\
+m_{\text{燃煤}} &= \qty{7150}{t},\\
+m_{CO_2} &= \qty{17300}{t},\\
+m_{SO_2} &= \qty{120}{t},\\
+m_{NO_x} &= \qty{180}{t}.
+\end{aligned}
+\end{equation*}
+课件未列出推导用的年利用小时数或负荷数据，因此这里只保留课件给出的结果。
+\end{solution}
+
+% index: calc_03_wind_p041_01 | source=others/03_风力发电.pdf | page=41 | slide=风力发电机组选型和布置 | status=checked
+\begin{problem}[V236-15.0 MW 机组年发电量与减排量]\label{exer:calc_03_wind_p041_01}
+Vestas V236-15.0 MW 海上风电机组单机容量为 \(\qty{15}{MW}\)，风轮直径为 \(\qty{236}{m}\)，扫风面积超过 \(\qty{43000}{m^2}\)，叶片长度为 \(\qty{115.5}{m}\)。课件给出其发电量每年 \(\qty{80}{GWh}\)，可满足约 \(\num{20000}\) 个欧洲家庭用电，每年可减少超过 \(\qty{38000}{t}\) 二氧化碳。整理该算例。
+\end{problem}
+
+\begin{solution}
+课件给出的年度指标为：
+\begin{equation*}
+\begin{aligned}
+P_{\text{额定}} &= \qty{15}{MW},\\
+D &= \qty{236}{m},\\
+A &> \qty{43000}{m^2},\\
+E_{\text{年}} &= \qty{80}{GWh},\\
+N_{\text{家庭}} &\approx \num{20000},\\
+m_{CO_2} &> \qty{38000}{t}.
+\end{aligned}
+\end{equation*}
+该页未给容量系数或折算过程，不能由课件信息继续复算。
+\end{solution}
+
+% index: calc_03_wind_p060_01 | source=others/03_风力发电.pdf | page=60 | slide=风力发电能量转换过程 | status=checked
+\begin{problem}[风力发电系统输出功率链]\label{exer:calc_03_wind_p060_01}
+根据风力发电能量转换过程，写出风功率、转子机械功率、发电机输出功率和系统输出功率之间的表达式。
+\end{problem}
+
+\begin{solution}
+课件给出的功率链为：
+\begin{equation*}
+\begin{aligned}
+P_W &= \frac{1}{2}\rho A v^3,\\
+P_T &= M_1\Omega_1,\\
+P_m &= M_2\Omega_2 = M_3\Omega_3,\\
+P_e &= \sqrt{3}UI\cos\varphi = P_m\eta_e.
+\end{aligned}
+\end{equation*}
+式中，\(P_e\) 为发电系统输出功率，\(U\) 为二相绕组上的线电压，\(I\) 为流过绕组的线电流，\(\cos\varphi\) 为功率因数，\(\eta_e\) 为发电系统总效率。
+\end{solution}
+
+% index: calc_03_wind_p066_01 | source=others/03_风力发电.pdf | page=66 | slide=风电机组的主要参数 | status=checked
+\begin{problem}[风能利用系数]\label{exer:calc_03_wind_p066_01}
+写出风能利用系数 \(C_p\) 的定义式。若风轮输出功率为 \(P\)，输入风轮面内功率为 \(P_A\)，扫掠面积为 \(A\)，风速为 \(V\)，空气密度为 \(\rho\)，给出 \(C_p\) 的计算式。
+\end{problem}
+
+\begin{solution}
+风能利用系数表示风力机从自然风能中吸收能量的程度：
+\begin{equation}
+C_p = \frac{P}{P_A}.
+\end{equation}
+由于输入风轮面内的功率为
+\begin{equation}
+P_A = \frac{1}{2}\rho A V^3,
+\end{equation}
+所以
+\begin{equation}
+C_p
+= \frac{P}{\frac{1}{2}\rho A V^3}.
+\end{equation}
+\end{solution}
+
+% index: calc_03_wind_p074_01 | source=others/03_风力发电.pdf | page=74 | slide=贝兹理论 | status=checked
+\begin{problem}[贝兹极限与有用功率]\label{exer:calc_03_wind_p074_01}
+贝兹理论指出，风轮从自然界中获得的能量比例有限，理论最大值为 \(0.593\)。实际风力机的功率利用率小于 \(0.593\)。写出风力机获得有用功率 \(P\) 的表达式。
+\end{problem}
+
+\begin{solution}
+课件给出的有用功率表达式为：
+\begin{equation}
+P = 0.5 C_p \rho S V^3.
+\end{equation}
+式中，\(C_p\) 为风能利用系数，且实际风力机通常满足 \(C_p < 0.593\)；\(S\) 为扫风面积，\(V\) 为风速。
+\end{solution}
+
+% index: calc_03_wind_p079_01 | source=others/03_风力发电.pdf | page=79 | slide=风力机设计的基本方法 | status=checked
+\begin{problem}[由目标功率反推风轮半径]\label{exer:calc_03_wind_p079_01}
+风力机工程设计中，已知功率要求 \(P\)、风能利用系数 \(C_p\)、空气密度 \(\rho\) 和设计风速 \(V_1\)。由风力机获得的功率公式推导风轮半径 \(R\)。
+\end{problem}
+
+\begin{solution}
+课件给出的功率公式为：
+\begin{equation}
+P = 0.5 C_p \rho S V_1^3
+  = 0.5 C_p \rho \pi R^2 V_1^3.
+\end{equation}
+解得风轮半径：
+\begin{equation}
+R = \sqrt{\frac{2P}{C_p\rho\pi V_1^3}}.
+\end{equation}
+\end{solution}
+
+% index: calc_03_wind_p160_01 | source=others/03_风力发电.pdf | page=160 | slide=3.3.2.2 容量 | status=checked
+\begin{problem}[额定容量与放电倍率]\label{exer:calc_03_wind_p160_01}
+额定容量为 \(\qty{100}{mA.h}\) 的电池经 \(\qty{5}{h}\) 放电完毕。求放电倍率和放电电流。
+\end{problem}
+
+\begin{solution}
+放电倍率为规定时间内放出额定容量所输出的电流值，以数字后加 \(C\) 表示：
+\begin{equation}
+C_{\text{倍率}} = \frac{1}{5} = 0.2C.
+\end{equation}
+放电电流为：
+\begin{equation}
+I = \qty{100}{mA.h} \times 0.2C = \qty{20}{mA}.
+\end{equation}
+\end{solution}
+
+% index: calc_03_wind_p161_01 | source=others/03_风力发电.pdf | page=161 | slide=3.3.2.3 功率 | status=checked
+\begin{problem}[电池输出功率]\label{exer:calc_03_wind_p161_01}
+已知储能电池端电压为 \(U\)，放电电流为 \(I\)。写出实际输出功率 \(P\) 的计算式，并说明功率和容量的区别。
+\end{problem}
+
+\begin{solution}
+课件给出的计算公式为：
+\begin{equation}
+P = U \cdot I.
+\end{equation}
+式中，\(P\) 为实际功率，单位为 \(\unit{W}\)；\(U\) 为端电压，单位为 \(\unit{V}\)；\(I\) 为放电电流，单位为 \(\unit{A}\)。容量决定电池能储存多少电能，功率决定电池能带动多大负载。
+\end{solution}
+
+% index: calc_03_wind_p163_01 | source=others/03_风力发电.pdf | page=163 | slide=3.3.2.5 充电效率 | status=checked
+\begin{problem}[储能电池充电效率]\label{exer:calc_03_wind_p163_01}
+在规定条件下，放电期间对外输出的电量与通过充电恢复到初始状态所需电量之比称为储能电池的充电效率。写出充电效率的计算式。
+\end{problem}
+
+\begin{solution}
+课件给出的充电效率公式为：
+\begin{equation}
+\eta_{\text{充电}}
+= \frac{\text{放电对外输出电量}}{\text{充电至初始状态所需电量}}
+\times 100\%.
+\end{equation}
+电量以 \(\unit{A.h}\) 或 \(\unit{W.h}\) 计量，因此也常称为安时效率或瓦时效率。
+\end{solution}
+
+\section{太阳能发电}
+
+% index: calc_04_solar_p014_01 | source=others/04_太阳能发电.pdf | page=14 | slide=4.1.1 太阳概况-太阳辐射功率 | status=checked
+\begin{problem}[维恩位移定律求太阳表面有效温度]\label{exer:calc_04_solar_p014_01}
+根据太阳光谱，已知峰值波长 \(\lambda_m = \qty{0.5023}{um}\)，维恩位移常数 \(b = \qty{2897.8}{um.K}\)。求太阳表面的有效温度 \(T\)。
+\end{problem}
+
+\begin{solution}
+维恩位移定律为：
+\begin{equation}
+\lambda_m T = b.
+\end{equation}
+代入数据：
+\begin{equation}
+T = \frac{b}{\lambda_m}
+  = \frac{\qty{2897.8}{um.K}}{\qty{0.5023}{um}}
+  \approx \qty{5769}{K}.
+\end{equation}
+\end{solution}
+
+% index: calc_04_solar_p015_01 | source=others/04_太阳能发电.pdf | page=15 | slide=4.1.1 太阳概况-太阳辐射功率 | status=checked
+\begin{problem}[斯特番-波耳兹曼定律]\label{exer:calc_04_solar_p015_01}
+写出黑体单位面积辐射功率 \(M\) 与绝对温度 \(T\) 的关系。课件给出太阳总辐射功率约为 \(3.8 \times 10^{20}\ \unit{MW}\)，到达地球大气层上界的辐射功率约为其 \(22\) 亿分之一。整理该页的计算关系。
+\end{problem}
+
+\begin{solution}
+斯特番-波耳兹曼光辐射定律为：
+\begin{equation}
+M = \sigma T^4.
+\end{equation}
+式中，\(M\) 为单位面积黑体辐射功率，\(\sigma = 5.67 \times 10^{-8}\ \unit{W/(m^2.K^4)}\)。课件给出的到达地球大气层上界辐射功率为：
+\begin{equation}
+P_{\text{地球上界}}
+\approx \frac{3.8 \times 10^{20}\ \unit{MW}}{22 \times 10^8}
+\approx 1.73 \times 10^{11}\ \unit{MW}.
+\end{equation}
+\end{solution}
+
+% index: calc_04_solar_p024_01 | source=others/04_太阳能发电.pdf | page=24 | slide=4.1.2 日地天文关系-日地距离 | status=checked
+\begin{problem}[地球轨道偏心修正系数]\label{exer:calc_04_solar_p024_01}
+设 \(r_0\) 为日地平均距离，\(r\) 为观测点日地距离，\(d_n\) 为一年中某一天的顺序数。写出地球轨道偏心修正系数 \(\xi_0\) 的 Spencer 公式和工程简化公式。
+\end{problem}
+
+\begin{solution}
+Spencer 修正公式为：
+\begin{equation}
+\xi_0
+= \left(\frac{r_0}{r}\right)^2
+= 1.00011 + 0.034221\cos\Gamma + 0.00128\sin\Gamma
++ 0.000719\cos2\Gamma + 0.000077\sin2\Gamma.
+\end{equation}
+日角为：
+\begin{equation}
+\Gamma = \frac{2\pi(d_n - 1)}{365}.
+\end{equation}
+太阳能工程设计中的简化计算式为：
+\begin{equation}
+\xi_0 = 1 + 0.033\cos\frac{360d_n}{370}.
+\end{equation}
+\end{solution}
+
+% index: calc_04_solar_p028_01 | source=others/04_太阳能发电.pdf | page=28 | slide=4.1.3 大气质量 | status=checked
+\begin{problem}[大气质量计算]\label{exer:calc_04_solar_p028_01}
+当太阳高度角 \(\alpha_s < 30^\circ\) 时，考虑折射和地面曲率影响，写出大气质量 \(m(\alpha_s)\) 的实用计算式；再写出高海拔气压修正式。
+\end{problem}
+
+\begin{solution}
+课件给出的实用计算式为：
+\begin{equation}
+m(\alpha_s)
+= \left[1229 + (614\sin\alpha_s)^2\right]^{1/2}
+- 614\sin\alpha_s.
+\end{equation}
+对海拔较高的地区，可按气压修正：
+\begin{equation}
+m(z,\alpha_s)
+= m(\alpha_s)\frac{P(z)}{760}.
+\end{equation}
+式中，\(z\) 为观测点海拔高度，\(P(z)\) 为观测地点大气压力，单位按课件为 \(\unit{mmHg}\)。
+\end{solution}
+
+% index: calc_04_solar_p029_01 | source=others/04_太阳能发电.pdf | page=29 | slide=4.1.3 大气透明度 | status=checked
+\begin{problem}[大气透明度与法向太阳辐射强度]\label{exer:calc_04_solar_p029_01}
+根据 Bouguer-Lambert 定律，写出波长为 \(\lambda\) 的法向太阳辐射强度经过大气后的表达式，并给出全色太阳辐射强度 \(I_n\) 的经验形式。
+\end{problem}
+
+\begin{solution}
+课件给出的微分衰减关系为：
+\begin{equation}
+dI_{\lambda,n} = -K_\lambda I_{\lambda,0}\,dm.
+\end{equation}
+积分后有：
+\begin{equation}
+I_{\lambda,n} = I_{\lambda,0}e^{-K_\lambda m}
+= I_{\lambda,0}P_\lambda^m,
+\end{equation}
+其中 \(P_\lambda = e^{-K_\lambda}\)。对全波段积分后，课件给出：
+\begin{equation}
+I_n = \xi_0 I_{sc}P^m,
+\end{equation}
+且
+\begin{equation}
+P = \sqrt[m]{\frac{I_n}{\xi_0 I_{sc}}}.
+\end{equation}
+\end{solution}
+
+% index: calc_04_solar_p031_01 | source=others/04_太阳能发电.pdf | page=31 | slide=4.1.4 地球表面太阳辐射强度的计算-水平面 | status=checked
+\begin{problem}[水平面直射辐照度]\label{exer:calc_04_solar_p031_01}
+写出水平面太阳总辐射强度 \(I\) 的组成，以及水平面太阳直射辐照度 \(I_b\) 的计算式。
+\end{problem}
+
+\begin{solution}
+水平面太阳总辐射强度由直射辐射强度与散射辐射强度组成：
+\begin{equation}
+I = I_b + I_d.
+\end{equation}
+水平面逐时太阳能直射辐照度为：
+\begin{equation}
+I_b = I_n\sin\alpha_s = I_n\cos\theta_z.
+\end{equation}
+结合大气透明度模型，可得：
+\begin{equation}
+I_b = \xi_0 I_{sc}P^m\sin\alpha_s.
+\end{equation}
+\end{solution}
+
+% index: calc_04_solar_p032_01 | source=others/04_太阳能发电.pdf | page=32 | slide=4.1.4 地球表面太阳辐射强度的计算-水平面 | status=checked
+\begin{problem}[水平面散射辐射强度]\label{exer:calc_04_solar_p032_01}
+晴天到达地球表面的太阳散射辐射强度主要取决于太阳高度角和大气透明度。写出课件给出的水平面太阳散射辐射强度 \(I_d\) 经验计算式。
+\end{problem}
+
+\begin{solution}
+课件给出的经验式为：
+\begin{equation}
+I_d
+= \frac{1}{2}\xi_0 I_{sc}
+\left[\frac{1 - P^m}{1 - 1.4\ln P}\right]\sin\alpha_s.
+\end{equation}
+式中，\(\xi_0\) 为地球轨道偏心修正系数，\(I_{sc}\) 为太阳常数，\(P\) 为大气透明系数，\(m\) 为大气质量，\(\alpha_s\) 为太阳高度角。
+\end{solution}
+
+% index: calc_04_solar_p033_01 | source=others/04_太阳能发电.pdf | page=33 | slide=4.1.4 地球表面太阳辐射强度的计算-倾斜面 | status=checked
+\begin{problem}[倾斜面直射辐射强度]\label{exer:calc_04_solar_p033_01}
+倾斜面太阳总辐射强度由直射、散射和反射三部分组成。写出 \(I_T\) 的组成式，并给出倾斜面直射辐射强度 \(I_{b,T}\) 与水平面直射辐射强度 \(I_b\) 的关系。
+\end{problem}
+
+\begin{solution}
+倾斜面太阳总辐射强度为：
+\begin{equation}
+I_T = I_{b,T} + I_{d,T} + I_{g,T}.
+\end{equation}
+倾斜面与水平面直射辐射强度之比为：
+\begin{equation}
+R_b = \frac{I_{b,T}}{I_b}
+= \frac{I_n\cos\theta}{I_n\cos\theta_z}
+= \frac{\cos\theta}{\cos\theta_z}.
+\end{equation}
+因此
+\begin{equation}
+I_{b,T} = I_b R_b.
+\end{equation}
+\end{solution}
+
+% index: calc_04_solar_p034_01 | source=others/04_太阳能发电.pdf | page=34 | slide=4.1.4 地球表面太阳辐射强度的计算-倾斜面 | status=checked
+\begin{problem}[倾斜面反射辐射强度]\label{exer:calc_04_solar_p034_01}
+假定地面反射辐射为各向同性，写出倾斜面反射辐射强度 \(I_{g,T}\) 的计算式。
+\end{problem}
+
+\begin{solution}
+课件给出的倾斜面反射辐射强度为：
+\begin{equation}
+I_{g,T}
+= I\rho\frac{1-\cos\beta}{2}.
+\end{equation}
+由于 \(I = I_b + I_d\)，也可写成：
+\begin{equation}
+I_{g,T}
+= (I_b + I_d)\rho\frac{1-\cos\beta}{2}.
+\end{equation}
+式中，\(\rho\) 为地面反射率，主要取决于地面状态，\(\beta\) 为倾斜面倾角。
+\end{solution}
+
+% index: calc_04_solar_p036_01 | source=others/04_太阳能发电.pdf | page=36 | slide=4.1.4 地球表面太阳辐射强度的计算-倾斜面 | status=checked
+\begin{problem}[倾斜面散射辐射强度]\label{exer:calc_04_solar_p036_01}
+根据 Perez 模型，写出倾斜面散射辐射强度 \(I_{d,T}\) 的表达式，并列出其中 \(F_1\)、\(F_2\) 的计算关系。
+\end{problem}
+
+\begin{solution}
+课件给出的 Perez 模型为：
+\begin{equation}
+I_{d,T}
+= I_d\left[(1-F_1)\frac{1+\cos\beta}{2}
++ F_1\frac{a}{b}
++ F_2\sin\beta\right].
+\end{equation}
+其中：
+\begin{equation*}
+\begin{aligned}
+F_1 &= \max\left\{0, f_{11} + f_{12}\Delta + \frac{\pi\theta_s}{180}f_{13}\right\},\\
+F_2 &= f_{21} + f_{22}\Delta + \frac{\pi\theta_s}{180}f_{23}.
+\end{aligned}
+\end{equation*}
+清晰度 \(\varepsilon\) 与水平面散射辐射强度 \(I_d\)、法向太阳辐射强度 \(I_n\) 有关：
+\begin{equation}
+\varepsilon
+= \frac{(I_d + I_n)/I_d + 5.535 \times 10^{-6}\theta_s^3}
+{1 + 5.535 \times 10^{-6}\theta_s^3}.
+\end{equation}
+\end{solution}
+
+% index: calc_04_solar_p065_01 | source=others/04_太阳能发电.pdf | page=65 | slide=4.2.4 聚焦型太阳能集热器-工质温度计算 | status=checked
+\begin{problem}[聚焦型太阳能集热器工质温度]\label{exer:calc_04_solar_p065_01}
+聚焦型太阳能集热器假定工质不流动，接收器吸收热量和对外散发热量相等。设聚光器有效面积为 \(A_c\)，接收器有效面积为 \(A_r\)，辐射通量为 \(I\)，聚光器反射率为 \(\rho\)，接收器吸收率为 \(\alpha_r\)，接收器发射率为 \(\varepsilon_r\)，波尔茨曼常数为 \(\sigma\)。写出工质温度 \(T\) 的计算式。
+\end{problem}
+
+\begin{solution}
+热平衡关系为：
+\begin{equation}
+A_c I\rho\alpha_r = A_r\varepsilon_r\sigma T^4.
+\end{equation}
+因此
+\begin{equation}
+T^4 = \frac{A_c}{A_r}\frac{\alpha_r}{\varepsilon_r}\frac{I\rho}{\sigma}.
+\end{equation}
+设聚光比 \(c = A_c/A_r\)，则
+\begin{equation}
+T = \left(c\frac{\alpha_r}{\varepsilon_r}\frac{I\rho}{\sigma}\right)^{1/4}.
+\end{equation}
+课件给出示例结果：\(c = 1000\) 时 \(T = \qty{1932}{K}\)，\(c = 3000\) 时 \(T = \qty{2540}{K}\)；实际因工质流动达不到该温度。
+\end{solution}
+
+% index: calc_04_solar_p102_01 | source=others/04_太阳能发电.pdf | page=102 | slide=4.3.6 太阳能储热技术-化学储热 | status=checked
+\begin{problem}[化学储热可逆反应平衡温度]\label{exer:calc_04_solar_p102_01}
+可逆化学反应 \(AB + Q \rightleftharpoons A + B\) 可用于储热。写出课件给出的可逆反应平衡温度 \(T_c\) 的计算式，并说明温度高低对应的反应方向。
+\end{problem}
+
+\begin{solution}
+课件给出的平衡温度为：
+\begin{equation}
+T_c = \frac{\Delta H^\circ_{298}}{\Delta S^\circ_{298}}.
+\end{equation}
+温度高于平衡温度时，进行吸热反应；低于平衡温度时，进行放热反应。
+\end{solution}
+
+% index: calc_04_solar_p121_01 | source=others/04_太阳能发电.pdf | page=121 | slide=4.4.3.1 太阳能电池的工作特性-输出特性 | status=checked
+\begin{problem}[太阳能电池电流-电压关系]\label{exer:calc_04_solar_p121_01}
+写出太阳能电池电流 \(I\) 与电压 \(U\) 的关系式，并说明 \(I_0\)、\(q\)、\(T\)、\(K\)、\(I_L\) 的含义。
+\end{problem}
+
+\begin{solution}
+课件给出的输出特性关系为：
+\begin{equation}
+I = I_0\left(e^{qU/(KT)} - 1\right) - I_L.
+\end{equation}
+式中，\(I_0\) 为饱和电流密度，\(q\) 为电子电荷，\(T\) 为热力学温度，\(K\) 为波尔茨曼常数，\(I_L\) 为光生电流，理想情况下等于短路电流。
+\end{solution}
+
+% index: calc_04_solar_p122_01 | source=others/04_太阳能发电.pdf | page=122 | slide=4.4.3.1 太阳能电池的工作特性-输出特性 | status=checked
+\begin{problem}[光生电流]\label{exer:calc_04_solar_p122_01}
+太阳能电池短路时，负载电阻 \(R_L=0\)，输出电压为 \(0\)。写出光生电流或短路电流 \(I_{sc}\) 的计算公式。
+\end{problem}
+
+\begin{solution}
+课件给出的光生电流计算公式为：
+\begin{equation}
+I_{sc} = I_L = qAG(L_e + W + L_h).
+\end{equation}
+式中，\(A\) 为横截面积，\(q\) 为电子电荷，\(G\) 为电子-空穴对产生率，\(W\) 为耗尽区宽度，\(L_e\)、\(L_h\) 分别为 \(p\) 型区和 \(n\) 型区扩散长度。
+\end{solution}
+
+% index: calc_04_solar_p123_01 | source=others/04_太阳能发电.pdf | page=123 | slide=4.4.3.1 太阳能电池的工作特性-输出特性 | status=checked
+\begin{problem}[开路电压]\label{exer:calc_04_solar_p123_01}
+令太阳能电池输出电流 \(I = 0\)，推得理想情况下开路电压 \(U_{OC}\) 的表达式。
+\end{problem}
+
+\begin{solution}
+由输出特性令 \(I = 0\)，课件给出开路电压：
+\begin{equation}
+U_{OC}
+= \frac{KT}{q}\ln\left(\frac{I_L}{I_0}+1\right).
+\end{equation}
+太阳能电池开路时，负载电阻 \(R_L\) 无穷大，通过电流为 \(0\)，过剩载流子积累在 PN 结附近，从而产生最大光生电动势。
+\end{solution}
+
+% index: calc_04_solar_p125_01 | source=others/04_太阳能发电.pdf | page=125 | slide=4.4.3.1 太阳能电池的工作特性-输出特性 | status=checked
+\begin{problem}[填充因子定义]\label{exer:calc_04_solar_p125_01}
+太阳能电池在最大功率点的工作电压和工作电流分别为 \(U_{mp}\)、\(I_{mp}\)，开路电压和短路电流分别为 \(U_{OC}\)、\(I_{SC}\)。写出填充因子 \(FF\)。
+\end{problem}
+
+\begin{solution}
+课件给出的填充因子为：
+\begin{equation}
+FF = \frac{U_{mp}I_{mp}}{U_{OC}I_{SC}}.
+\end{equation}
+一般条件下，填充因子在 \(0.7\) 至 \(0.85\) 之间。
+\end{solution}
+
+% index: calc_04_solar_p126_01 | source=others/04_太阳能发电.pdf | page=126 | slide=4.4.3.1 太阳能电池的工作特性-输出特性 | status=checked
+\begin{problem}[填充因子经验式]\label{exer:calc_04_solar_p126_01}
+设归一化开路电压为 \(v_{OC}\)。写出课件给出的填充因子 \(FF\) 经验计算式。
+\end{problem}
+
+\begin{solution}
+课件给出的经验式为：
+\begin{equation}
+FF = \frac{v_{OC} - \ln(v_{OC}+0.72)}{v_{OC}+1}.
+\end{equation}
+课件举例说明，GaAs 太阳能电池可以具有接近 \(0.89\) 的 \(FF\)。
+\end{solution}
+
+% index: calc_04_solar_p127_01 | source=others/04_太阳能发电.pdf | page=127 | slide=4.4.3.1 太阳能电池的工作特性-输出特性 | status=checked
+\begin{problem}[太阳能电池能量转换效率]\label{exer:calc_04_solar_p127_01}
+写出太阳能电池能量转换效率 \(\eta\) 与最大功率点参数、开路电压、短路电流和填充因子的关系。
+\end{problem}
+
+\begin{solution}
+课件给出的能量转换效率为：
+\begin{equation}
+\eta = \frac{U_{mp}I_{mp}}{P_{in}}
+= \frac{U_{OC}I_{SC}FF}{P_{in}}.
+\end{equation}
+其中，\(P_{in}\) 为入射太阳辐射功率。目前商用单晶硅太阳能电池的能量转换效率在 \(18\%\) 至 \(24\%\)。
+\end{solution}
+
+% index: calc_04_solar_p131_01 | source=others/04_太阳能发电.pdf | page=131 | slide=4.4.3.2 极限效率和效率损失-极限效率 | status=checked
+\begin{problem}[硅太阳能电池极限效率]\label{exer:calc_04_solar_p131_01}
+课件指出对于硅，最大开路电压 \(U_{OC}\) 约为 \(\qty{700}{mV}\)，相应最高填充因子 \(FF\) 为 \(0.84\)。结合最大短路电流 \(I_{SC}\)，给出最高转换效率结果，并说明提高 \(U_{OC}\) 时 \(I_0\) 的要求。
+\end{problem}
+
+\begin{solution}
+效率关系为：
+\begin{equation}
+\eta = \frac{U_{OC}I_{SC}FF}{P_{in}}.
+\end{equation}
+课件给出的硅太阳能电池最高转换效率约为：
+\begin{equation}
+\eta_{\max} \approx 29.1\%.
+\end{equation}
+由
+\begin{equation}
+U_{OC} = \frac{KT}{q}\ln\left(\frac{I_L}{I_0}+1\right)
+\end{equation}
+可知，要得到较大的开路电压 \(U_{OC}\)，\(I_0\) 需要尽可能小。
+\end{solution}
+
+% index: calc_04_solar_p157_01 | source=others/04_太阳能发电.pdf | page=157 | slide=4.4.5 太阳能光伏发电系统-固定安装 | status=checked
+\begin{problem}[固定安装阵列间距校核]\label{exer:calc_04_solar_p157_01}
+为使太阳电池输出功率不受影响，应保证在影子最长的冬至日，从午前 \(9:00\) 至午后 \(15:00\)，前板影子不会遮挡后板。根据课件图示，说明阵列间距校核需要计算哪些太阳位置量。
+\end{problem}
+
+\begin{solution}
+课件说明冬至时应计算太阳能电池板安装地点在 \(9:00\) 或 \(15:00\) 的太阳高度角 \(h\) 与太阳方位角 \(\alpha\)。利用 \(h\) 与 \(\alpha\) 可校核前后板间距 \(L_s\)、板高 \(L\) 和地面间隙 \(e\) 下是否遮挡。
+\end{solution}
+
+% index: calc_04_solar_p169_01 | source=others/04_太阳能发电.pdf | page=169 | slide=4.4.5 太阳能光伏发电系统-最大功率点控制 | status=checked
+\begin{problem}[最大功率点跟踪控制]\label{exer:calc_04_solar_p169_01}
+最大功率点跟踪控制 MPPT 使太阳能电池板在不同日照和温度环境下尽可能工作在最大功率点。根据课件，说明 MPPT 需要采集和计算哪些电气量。
+\end{problem}
+
+\begin{solution}
+课件给出的 MPPT 过程为：采集电池阵列输出电压与电流，根据相应控制算法调整变换器输出采空比，使电池板工作于最大功率点；变换器输出端电压与电流检测用于计算机对输出控制的参考。核心计算量为：
+\begin{equation}
+P = UI.
+\end{equation}
+\end{solution}
+
+% index: calc_04_solar_p171_01 | source=others/04_太阳能发电.pdf | page=171 | slide=4.4.5 太阳能光伏发电系统-最大功率点控制 | status=checked
+\begin{problem}[恒电压跟踪温度修正]\label{exer:calc_04_solar_p171_01}
+恒电压跟踪 CVT 认为温度一定时最大功率点基本在一根垂直线上。以单晶硅电池为例，温度每升高 \(\qty{1}{\degreeCelsius}\)，开路电压下降率为 \(0.35\%\) 至 \(0.45\%\)。说明该方法如何进行温度修正。
+\end{problem}
+
+\begin{solution}
+课件给出的修正思想是：当温度变化不大、日照稳定时，保持输出电压在近似最大功率点电压 \(U_m\) 附近；当环境温度变化时，根据环境温度信号修正 \(U_m\)，以补偿温度变化带来的功率损失。单晶硅电池可按
+\begin{equation}
+\Delta U_{OC} \approx -(0.35\%\sim0.45\%)U_{OC}\Delta T
+\end{equation}
+估算温升导致的开路电压下降。
+\end{solution}
+
+% index: calc_04_solar_p172_01 | source=others/04_太阳能发电.pdf | page=172 | slide=4.4.5 太阳能光伏发电系统-最大功率点控制 | status=checked
+\begin{problem}[电导增量法最大功率点判据]\label{exer:calc_04_solar_p172_01}
+电导增量法通过比较太阳能电池瞬时电导和电导变化量来计算最大功率点。设输出功率为 \(P\)，输出电压为 \(U\)。写出最大功率点附近的判据。
+\end{problem}
+
+\begin{solution}
+最大功率点处功率-电压曲线斜率为零：
+\begin{equation}
+\frac{dP}{dU} = 0.
+\end{equation}
+当电池板输出电压小于 \(U_m\) 时，曲线斜率为正：
+\begin{equation}
+\frac{dP}{dU} > 0.
+\end{equation}
+当电池板输出电压大于 \(U_m\) 时，曲线斜率为负：
+\begin{equation}
+\frac{dP}{dU} < 0.
+\end{equation}
+\end{solution}
