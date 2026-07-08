@@ -1,0 +1,453 @@
+\chapter{风力发电}
+
+\section{思考题}
+
+% source: docs/review_questions.md | chapter=2. 风力发电 | question=1
+\begin{problem}[思考题 1]\label{exer:think_03_wind_01}
+请简述风的形成过程，并列举风的常见形式。
+\end{problem}
+
+\begin{solution}
+\begin{itemize}
+\item \textbf{风的形成过程}：由于地球上不同高度处大气层压力分布不均以及地球自转的影响，空气处于永不停息的运动状态，空气的流动即形成了风 。从大气环流的角度来看，其形成因素包括：太阳辐射强度的差异（赤道空气受热膨胀上升，极地空气受冷压缩下降形成单圈环流）、地球自转的影响、海陆间热力性质的差异（夏季陆地升温快相对低压，海洋相对高压，地表空气从海洋流向陆地；冬季相反）以及地表地形起伏的影响 。
+\item \textbf{风的常见形式}：季风、海陆风、山谷风 。
+\end{itemize}
+\end{solution}
+
+% source: docs/review_questions.md | chapter=2. 风力发电 | question=2
+\begin{problem}[思考题 2]\label{exer:think_03_wind_02}
+请说明风有哪些主要特征？
+\end{problem}
+
+\begin{solution}
+\begin{itemize}
+\item PDF 中并未直接提供标有“风的主要特征”的统一定义文本。结合文中相关章节内容，风的主要特征可简洁凝练地概括为：\textbf{风向}（风吹来的方向）与\textbf{风速}（或风力等级） ；此外，风速具有不恒定、时刻变化的\textbf{随机性}与\textbf{脉动性}（脉动风速=瞬时风速-平均风速），且风速会\textbf{随时间和高度发生变化}（如近地面午后风速大、清晨风速小，且在一定范围内随高度增加而增大） 。
+\end{itemize}
+\end{solution}
+
+% source: docs/review_questions.md | chapter=2. 风力发电 | question=3
+\begin{problem}[思考题 3]\label{exer:think_03_wind_03}
+请给出风能的数学计算式，并解释影响风能大小的最主要因素。
+\end{problem}
+
+\begin{solution}
+\begin{itemize}
+\item \textbf{数学计算式}：
+\begin{itemize}
+\item \textbf{气流动能}：\(E=\frac{1}{2}mv^{2}=\frac{1}{2}\rho Avtv^{2}=\frac{1}{2}\rho Atv^{3}\) （式中 \(E\) 为动能，\(m\) 为质量，\(v\) 为速度，\(\rho\) 为空气密度，\(t\) 为时间，\(A\) 为气流横截面积） 。
+\item \textbf{风功率}：\(P_{w}=\frac{1}{2}\rho Av^{3}\) 。
+\item \textbf{风能密度}（气体在单位时间内通过单位横截面积的风能大小）：\(w=\frac{1}{2}\rho v^{3}\) 。
+\end{itemize}
+\item \textbf{影响风能大小的最主要因素}：\textbf{风速} 。根据上述数学计算式，风能（动能或风功率）与风速的立方（\(v^3\)）成正比，风速的微小变化都会导致风能大小呈立方级数的剧烈变化 。
+\end{itemize}
+\end{solution}
+
+% source: docs/review_questions.md | chapter=2. 风力发电 | question=4
+\begin{problem}[思考题 4]\label{exer:think_03_wind_04}
+风力机的主要类型及其基本组成结构。
+\end{problem}
+
+\begin{solution}
+\begin{itemize}
+\item \textbf{主要类型}：
+\begin{itemize}
+\item 按风轮转动轴与地面的相对位置分类：\textbf{垂直轴风力机}与\textbf{水平轴风力机} 。
+\item 按叶片工作原理分类：\textbf{升力型风力机}与\textbf{阻力型风力机} 。
+\item 按风轮转速分类：\textbf{定速型}与\textbf{变速型} 。
+\item 按功率调节分类：\textbf{定桨距}与\textbf{变桨距} 。
+\item 按风力机容量分类：大、中、小、微等型号 。
+\end{itemize}
+\item \textbf{基本组成结构}：
+\begin{itemize}
+\item \textbf{垂直轴风力机}：主要由转子、中心塔柱、上下轮毂、上下轴承等组成 。
+\item \textbf{水平轴风力机}：主要部件为风轮、机舱与塔架 。
+\end{itemize}
+\end{itemize}
+\end{solution}
+
+% source: docs/review_questions.md | chapter=2. 风力发电 | question=5
+\begin{problem}[思考题 5]\label{exer:think_03_wind_05}
+为什么要在风力发电机组中会用到偏航系统？偏航系统的工作原理是什么？
+\end{problem}
+
+\begin{solution}
+\begin{itemize}
+\item \textbf{用偏航系统的原因}：为了与控制系统相互配合，使风力发电机组的风轮始终处于迎风状态，充分利用风能；同时提供必要的锁紧力矩，保证风力发电机组的安全运行 。当风速矢量的方向变化时，偏航系统能够快速平稳地对准风向，以便风轮获得最大的风能 。
+\item \textbf{工作原理}：
+\begin{itemize}
+\item \textbf{主动偏航}：采用电力或液压拖动完成对风动作，通过齿轮驱动与滑动实现 。对于并网型风力发电机组来说，通常都采用主动偏航的齿轮驱动形式 。
+\item \textbf{被动偏航}：依靠风力完成风轮对风动作，主要通过尾舵、舵轮下风向来实现 。
+\end{itemize}
+\end{itemize}
+\end{solution}
+
+% source: docs/review_questions.md | chapter=2. 风力发电 | question=6
+\begin{problem}[思考题 6]\label{exer:think_03_wind_06}
+请简述风力发电机组的主要组成部分，并说明其工作原理。
+\end{problem}
+
+\begin{solution}
+\begin{itemize}
+\item \textbf{主要组成部分}：典型的风力发电机组由风力机、传动系统、制动系统、变桨距系统、液压系统、发电机、支撑保护系统构成。核心部分是风轮机（风力机）、传动变速机构和发电机三个部分 。
+\item \textbf{工作原理（以变速恒频风力发电系统为例）}：
+\begin{enumerate}
+\item 风力机把风能转化为动能 。
+\item 齿轮箱将风力机的低转速转化为发电机运行所需的高转速 。
+\item 发电机把风力机输出的机械能转变为电能 。
+\item 发电机侧变流器将发电机发出的变频交流电转换为直流电 。
+\item 直流环节的电压控制一般保持恒定 。
+\item 网侧变流器使直流电转变为三相正弦波交流电，并能有效地补偿电网功率因数 。
+\item 变压器把电能变为高压交流电输入电网 。
+\end{enumerate}
+\end{itemize}
+\end{solution}
+
+% source: docs/review_questions.md | chapter=2. 风力发电 | question=7
+\begin{problem}[思考题 7]\label{exer:think_03_wind_07}
+从结构上来说，储能电池一般有哪些主要的组成部分？
+\end{problem}
+
+\begin{solution}
+\begin{itemize}
+\item \textbf{主要组成部分}：外壳（包括电池槽和电池盖）、电极与极板（包括活性物质和导电骨架）、隔膜、电解质等 。
+\end{itemize}
+\end{solution}
+
+% source: docs/review_questions.md | chapter=2. 风力发电 | question=8
+\begin{problem}[思考题 8]\label{exer:think_03_wind_08}
+在储能电池选型过程中，需要注意哪些主要性能参数？
+\end{problem}
+
+\begin{solution}
+\begin{itemize}
+\item \textbf{主要性能参数}：电压、容量、功率、寿命、充电效率 。
+\end{itemize}
+\end{solution}
+
+% source: docs/review_questions.md | chapter=2. 风力发电 | question=9
+\begin{problem}[思考题 9]\label{exer:think_03_wind_09}
+储能电池的开路电压、端电压、标称电压和终止电压有什么区别？
+\end{problem}
+
+\begin{solution}
+\begin{itemize}
+\item \textbf{开路电压}：电池开路状态下的电压值，电池的开路电压与电池的设计有关 。
+\item \textbf{端电压}：充电或放电时的电压值，与储能电池的工况有关 。
+\item \textbf{标称电压}：电池放电过程中最稳定的电压值，用于鉴别电池的类型 。
+\item \textbf{终止电压}：电池充放电过程中电压的上下限 。
+\end{itemize}
+\end{solution}
+
+% source: docs/review_questions.md | chapter=2. 风力发电 | question=10
+\begin{problem}[思考题 10]\label{exer:think_03_wind_10}
+请列举 3-4 个可以用于新能源发电系统中储能系统的电池技术，并比较他们各自的优劣。
+\end{problem}
+
+\begin{solution}
+\begin{enumerate}
+\item \textbf{铅酸蓄电池（铅酸电池）}：
+\begin{itemize}
+\item \textbf{优点}：单体容量大、成本低、易控制、安全可靠、技术成熟度高、市场应用广泛 。
+\item \textbf{缺点}：比能量较低、循环寿命短、易产生环境污染 。
+\end{itemize}
+\item \textbf{锂离子电池}：
+\begin{itemize}
+\item \textbf{优点}：能量密度大、工作电压高、清洁 。
+\item \textbf{缺点}：价格高、内阻大、需要保护电路、稳定性差 。
+\end{itemize}
+\item \textbf{全钒液流电池}：
+\begin{itemize}
+\item \textbf{优点}：使用同种元素的电池系统，避免了正负半电池间不同种类活性物质相互渗透产生的交叉感染；功率和容量的调整在结构上独立，易于模块化组合；钒离子电解液可以回收重复使用和再生利用 。
+\item \textbf{缺点}：对工作温度要求严格，比容量较低，价格过高；需要配置循环泵，降低了实际效率 。
+\end{itemize}
+\item \textbf{钠硫电池}：
+\begin{itemize}
+\item \textbf{优点}：能量密度高、寿命长、充放电效率高 。
+\item \textbf{缺点}：工作温度高、存在安全性问题 。
+\end{itemize}
+\end{enumerate}
+\end{solution}
+
+% source: docs/review_questions.md | chapter=2. 风力发电 | question=11
+\begin{problem}[思考题 11]\label{exer:think_03_wind_11}
+请说明智能电网技术的开发背景，并概括说明其基本特征。
+\end{problem}
+
+\begin{solution}
+\begin{itemize}
+\item \textbf{开发背景（传统电网的问题）}：传统电网获取的数据有限；一般只能记录使用了多少电量，无法按时间区分使用情况、电压、功率等参数；供应方和终端用户之间存在通讯限制，从而阻碍了需求侧的管理，无法发挥负载在电网调度中的作用 。
+\item \textbf{基本特征}：
+\begin{itemize}
+\item \textbf{中国定义的坚强智能电网特征}：以坚强网架为基础，以通信信息平台为支撑，以智能控制为手段，实现“电力流、信息流、业务流”的高度一体化融合，具有坚强可靠、经济高效、清洁环保、透明开发、友好互动的特点 。
+\item \textbf{“智能”的具体表现特征}：可观测（准确感知）、可控制（有效控制）、实时分析和决策（提升决策智能化）、自适应和自愈（自动优化与自我恢复故障） 。
+\end{itemize}
+\end{itemize}
+\end{solution}
+
+% source: docs/review_questions.md | chapter=2. 风力发电 | question=12
+\begin{problem}[思考题 12]\label{exer:think_03_wind_12}
+请阐述智能电网中包括哪些基础技术？
+\end{problem}
+
+\begin{solution}
+\begin{enumerate}
+\item 传感与量测技术
+\item 电力电子技术
+\item 数据通信技术
+\item 信息安全技术
+\item 控制决策技术
+\end{enumerate}
+\end{solution}
+
+% source: docs/review_questions.md | chapter=2. 风力发电 | question=13
+\begin{problem}[思考题 13]\label{exer:think_03_wind_13}
+在智能电网的通信过程中，用户有哪些信息安全需求？
+\end{problem}
+
+\begin{solution}
+\begin{itemize}
+\item \textbf{私密性}：只有消息发送者和消息接受者可以理解消息内容 。
+\item \textbf{完整性}：确保信息不会被篡改，或在信息篡改后能够迅速发现并解决问题 。
+\item \textbf{消息认证}：消息接受者可以确认发送者身份 。
+\item \textbf{不可否认性}：该发送者不能否认自己发送消息的行为和消息内容 。
+\end{itemize}
+\end{solution}
+
+% source: docs/review_questions.md | chapter=2. 风力发电 | question=14
+\begin{problem}[思考题 14]\label{exer:think_03_wind_14}
+为了实现智能电网的进一步发展还存在哪些需要攻克的关键技术？
+\end{problem}
+
+\begin{solution}
+\begin{enumerate}
+\item 新能源发电控制及接入电网关键技术
+\item 大电网监控和输配电智能化的关键技术
+\item 电网安全与智能调度技术
+\item 智能配电与用电关键技术
+\end{enumerate}
+\end{solution}
+
+\section{计算题}
+
+% index: calc_03_wind_p024_01 | source=others/03_风力发电.pdf | page=24 | slide=3.1.4 风速 | status=checked
+\begin{problem}[风速随高度变化]\label{exer:calc_03_wind_p024_01}
+在地表至高空 \(\qty{1000}{m}\) 范围内，地面风速低，高空风速高。已知高度 \(h_1\) 处风速为 \(v_1\)，风切变指数为 \(\alpha\)。写出高度 \(h\) 处风速 \(v\) 的经验计算式。
+\end{problem}
+
+\begin{solution}
+课件给出的风速高度经验公式为：
+\begin{equation}
+v = v_1 \left(\frac{h}{h_1}\right)^\alpha.
+\end{equation}
+式中，\(h_1\) 为已知风速对应高度，\(h\) 为待求高度。课件未给数值，代入高度、风速和 \(\alpha\) 后即可求 \(v\)。
+\end{solution}
+
+% index: calc_03_wind_p027_01 | source=others/03_风力发电.pdf | page=27 | slide=3.1.5 风能 | status=checked
+\begin{problem}[气流动能]\label{exer:calc_03_wind_p027_01}
+设空气密度为 \(\rho\)，气流横截面积为 \(A\)，风速为 \(v\)，作用时间为 \(t\)。根据气流质量 \(m = \rho A v t\)，推导该时间内通过截面的气流动能 \(E\)。
+\end{problem}
+
+\begin{solution}
+气流动能由动能公式得到：
+\begin{equation}
+E = \frac{1}{2}mv^2.
+\end{equation}
+代入 \(m = \rho A v t\)，可得
+\begin{equation}
+E = \frac{1}{2}\rho A v t \cdot v^2
+  = \frac{1}{2}\rho A t v^3.
+\end{equation}
+式中，\(E\) 为动能，\(m\) 为质量，\(v\) 为速度，\(\rho\) 为空气密度，\(t\) 为时间，\(A\) 为气流横截面积。
+\end{solution}
+
+% index: calc_03_wind_p028_01 | source=others/03_风力发电.pdf | page=28 | slide=3.1.5 风能 | status=checked
+\begin{problem}[风能密度]\label{exer:calc_03_wind_p028_01}
+写出单位时间内通过单位截面积的风能密度 \(w\)、平均风能密度 \(\overline{w}\) 和有效风能密度 \(w_i\) 的表达式。
+\end{problem}
+
+\begin{solution}
+瞬时风能密度为：
+\begin{equation}
+w = \frac{1}{2}\rho v^3.
+\end{equation}
+观测时间为 \(T\) 时，平均风能密度为：
+\begin{equation}
+\overline{w}
+= \frac{1}{T}\int_0^T \frac{1}{2}\rho v^3\,dT.
+\end{equation}
+设 \(v_1\) 为风机启动风速，\(v_2\) 为停机风速，\(P'(v)\) 为风速概率分布函数，则有效风能密度为：
+\begin{equation}
+w_i
+= \int_{v_1}^{v_2}\frac{1}{2}\rho v^3 P'(v)\,dv.
+\end{equation}
+\end{solution}
+
+% index: calc_03_wind_p037_01 | source=others/03_风力发电.pdf | page=37 | slide=3.1.6 风电厂选址原则 | status=checked
+\begin{problem}[风资源丰富区指标判断]\label{exer:calc_03_wind_p037_01}
+按课件给出的风电厂选址原则，判断某场址是否属于风资源丰富地区时，应检查哪些计算指标？写出对应阈值。
+\end{problem}
+
+\begin{solution}
+课件给出的风资源丰富地区指标为：
+\begin{equation*}
+\begin{aligned}
+\overline{v} &> \qty{6}{m/s},\\
+t_{\qtyrange{3}{25}{m/s}} &> \qty{5000}{h},\\
+w_i &> \qty{300}{W/m^2}.
+\end{aligned}
+\end{equation*}
+其中，\(\overline{v}\) 为平均风速，\(t_{\qtyrange{3}{25}{m/s}}\) 为 \(\qtyrange{3}{25}{m/s}\) 有效风速小时数，\(w_i\) 为平均有效风能密度。
+\end{solution}
+
+% index: calc_03_wind_p040_01 | source=others/03_风力发电.pdf | page=40 | slide=风力发电机组选型和布置 | status=checked
+\begin{problem}[5.5-172 机组年发电量与减排量]\label{exer:calc_03_wind_p040_01}
+东方风电 5.5-172 型永磁直驱风电机组单机容量为 \(\qty{5}{MW}\)，叶轮直径为 \(\qty{172}{m}\)。课件给出在设计风速下，单台机组每年可输出 \(2200 \times 10^4\ \unit{kWh}\) 电能，可满足 \(\num{11000}\) 个三口之家提供一年的正常用电，可燃煤消耗 \(\qty{7150}{t}\)，减少二氧化碳排放 \(\qty{17300}{t}\)、二氧化硫排放 \(\qty{120}{t}\)、氮氧化物排放 \(\qty{180}{t}\)。整理该算例中的年度发电量和减排指标。
+\end{problem}
+
+\begin{solution}
+课件已经给出计算结果，本题按指标归纳：
+\begin{equation*}
+\begin{aligned}
+E_{\text{年}} &= 2200 \times 10^4\ \unit{kWh},\\
+N_{\text{家庭}} &= \num{11000},\\
+m_{\text{燃煤}} &= \qty{7150}{t},\\
+m_{CO_2} &= \qty{17300}{t},\\
+m_{SO_2} &= \qty{120}{t},\\
+m_{NO_x} &= \qty{180}{t}.
+\end{aligned}
+\end{equation*}
+课件未列出推导用的年利用小时数或负荷数据，因此这里只保留课件给出的结果。
+\end{solution}
+
+% index: calc_03_wind_p041_01 | source=others/03_风力发电.pdf | page=41 | slide=风力发电机组选型和布置 | status=checked
+\begin{problem}[V236-15.0 MW 机组年发电量与减排量]\label{exer:calc_03_wind_p041_01}
+Vestas V236-15.0 MW 海上风电机组单机容量为 \(\qty{15}{MW}\)，风轮直径为 \(\qty{236}{m}\)，扫风面积超过 \(\qty{43000}{m^2}\)，叶片长度为 \(\qty{115.5}{m}\)。课件给出其发电量每年 \(\qty{80}{GWh}\)，可满足约 \(\num{20000}\) 个欧洲家庭用电，每年可减少超过 \(\qty{38000}{t}\) 二氧化碳。整理该算例。
+\end{problem}
+
+\begin{solution}
+课件给出的年度指标为：
+\begin{equation*}
+\begin{aligned}
+P_{\text{额定}} &= \qty{15}{MW},\\
+D &= \qty{236}{m},\\
+A &> \qty{43000}{m^2},\\
+E_{\text{年}} &= \qty{80}{GWh},\\
+N_{\text{家庭}} &\approx \num{20000},\\
+m_{CO_2} &> \qty{38000}{t}.
+\end{aligned}
+\end{equation*}
+该页未给容量系数或折算过程，不能由课件信息继续复算。
+\end{solution}
+
+% index: calc_03_wind_p060_01 | source=others/03_风力发电.pdf | page=60 | slide=风力发电能量转换过程 | status=checked
+\begin{problem}[风力发电系统输出功率链]\label{exer:calc_03_wind_p060_01}
+根据风力发电能量转换过程，写出风功率、转子机械功率、发电机输出功率和系统输出功率之间的表达式。
+\end{problem}
+
+\begin{solution}
+课件给出的功率链为：
+\begin{equation*}
+\begin{aligned}
+P_W &= \frac{1}{2}\rho A v^3,\\
+P_T &= M_1\Omega_1,\\
+P_m &= M_2\Omega_2 = M_3\Omega_3,\\
+P_e &= \sqrt{3}UI\cos\varphi = P_m\eta_e.
+\end{aligned}
+\end{equation*}
+式中，\(P_e\) 为发电系统输出功率，\(U\) 为二相绕组上的线电压，\(I\) 为流过绕组的线电流，\(\cos\varphi\) 为功率因数，\(\eta_e\) 为发电系统总效率。
+\end{solution}
+
+% index: calc_03_wind_p066_01 | source=others/03_风力发电.pdf | page=66 | slide=风电机组的主要参数 | status=checked
+\begin{problem}[风能利用系数]\label{exer:calc_03_wind_p066_01}
+写出风能利用系数 \(C_p\) 的定义式。若风轮输出功率为 \(P\)，输入风轮面内功率为 \(P_A\)，扫掠面积为 \(A\)，风速为 \(V\)，空气密度为 \(\rho\)，给出 \(C_p\) 的计算式。
+\end{problem}
+
+\begin{solution}
+风能利用系数表示风力机从自然风能中吸收能量的程度：
+\begin{equation}
+C_p = \frac{P}{P_A}.
+\end{equation}
+由于输入风轮面内的功率为
+\begin{equation}
+P_A = \frac{1}{2}\rho A V^3,
+\end{equation}
+所以
+\begin{equation}
+C_p
+= \frac{P}{\frac{1}{2}\rho A V^3}.
+\end{equation}
+\end{solution}
+
+% index: calc_03_wind_p074_01 | source=others/03_风力发电.pdf | page=74 | slide=贝兹理论 | status=checked
+\begin{problem}[贝兹极限与有用功率]\label{exer:calc_03_wind_p074_01}
+贝兹理论指出，风轮从自然界中获得的能量比例有限，理论最大值为 \(0.593\)。实际风力机的功率利用率小于 \(0.593\)。写出风力机获得有用功率 \(P\) 的表达式。
+\end{problem}
+
+\begin{solution}
+课件给出的有用功率表达式为：
+\begin{equation}
+P = 0.5 C_p \rho S V^3.
+\end{equation}
+式中，\(C_p\) 为风能利用系数，且实际风力机通常满足 \(C_p < 0.593\)；\(S\) 为扫风面积，\(V\) 为风速。
+\end{solution}
+
+% index: calc_03_wind_p079_01 | source=others/03_风力发电.pdf | page=79 | slide=风力机设计的基本方法 | status=checked
+\begin{problem}[由目标功率反推风轮半径]\label{exer:calc_03_wind_p079_01}
+风力机工程设计中，已知功率要求 \(P\)、风能利用系数 \(C_p\)、空气密度 \(\rho\) 和设计风速 \(V_1\)。由风力机获得的功率公式推导风轮半径 \(R\)。
+\end{problem}
+
+\begin{solution}
+课件给出的功率公式为：
+\begin{equation}
+P = 0.5 C_p \rho S V_1^3
+  = 0.5 C_p \rho \pi R^2 V_1^3.
+\end{equation}
+解得风轮半径：
+\begin{equation}
+R = \sqrt{\frac{2P}{C_p\rho\pi V_1^3}}.
+\end{equation}
+\end{solution}
+
+% index: calc_03_wind_p160_01 | source=others/03_风力发电.pdf | page=160 | slide=3.3.2.2 容量 | status=checked
+\begin{problem}[额定容量与放电倍率]\label{exer:calc_03_wind_p160_01}
+额定容量为 \(\qty{100}{mA.h}\) 的电池经 \(\qty{5}{h}\) 放电完毕。求放电倍率和放电电流。
+\end{problem}
+
+\begin{solution}
+放电倍率为规定时间内放出额定容量所输出的电流值，以数字后加 \(C\) 表示：
+\begin{equation}
+C_{\text{倍率}} = \frac{1}{5} = 0.2C.
+\end{equation}
+放电电流为：
+\begin{equation}
+I = \qty{100}{mA.h} \times 0.2C = \qty{20}{mA}.
+\end{equation}
+\end{solution}
+
+% index: calc_03_wind_p161_01 | source=others/03_风力发电.pdf | page=161 | slide=3.3.2.3 功率 | status=checked
+\begin{problem}[电池输出功率]\label{exer:calc_03_wind_p161_01}
+已知储能电池端电压为 \(U\)，放电电流为 \(I\)。写出实际输出功率 \(P\) 的计算式，并说明功率和容量的区别。
+\end{problem}
+
+\begin{solution}
+课件给出的计算公式为：
+\begin{equation}
+P = U \cdot I.
+\end{equation}
+式中，\(P\) 为实际功率，单位为 \(\unit{W}\)；\(U\) 为端电压，单位为 \(\unit{V}\)；\(I\) 为放电电流，单位为 \(\unit{A}\)。容量决定电池能储存多少电能，功率决定电池能带动多大负载。
+\end{solution}
+
+% index: calc_03_wind_p163_01 | source=others/03_风力发电.pdf | page=163 | slide=3.3.2.5 充电效率 | status=checked
+\begin{problem}[储能电池充电效率]\label{exer:calc_03_wind_p163_01}
+在规定条件下，放电期间对外输出的电量与通过充电恢复到初始状态所需电量之比称为储能电池的充电效率。写出充电效率的计算式。
+\end{problem}
+
+\begin{solution}
+课件给出的充电效率公式为：
+\begin{equation}
+\eta_{\text{充电}}
+= \frac{\text{放电对外输出电量}}{\text{充电至初始状态所需电量}}
+\times 100\%.
+\end{equation}
+电量以 \(\unit{A.h}\) 或 \(\unit{W.h}\) 计量，因此也常称为安时效率或瓦时效率。
+\end{solution}

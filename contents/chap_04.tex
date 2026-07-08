@@ -1,0 +1,600 @@
+\chapter{太阳能发电}
+
+\section{思考题}
+
+% source: docs/review_questions.md | chapter=3. 太阳能发电 | question=1
+\begin{problem}[思考题 1]\label{exer:think_04_solar_01}
+太阳能的主要特点是什么？有哪些主要的利用方式，请指出其应用领域。
+\end{problem}
+
+\begin{solution}
+\begin{itemize}
+\item \textbf{太阳能的主要特点}：根据PDF第4.1.5节，太阳能资源分布地区性差异较大，总体上呈“高原、少雨干燥地区多；平原、多雨高湿地区少”的特点 。从能源属性看，它具有可再生、清洁无污染，但能量密度低、具有间歇性和波动性的普遍特性。
+\item \textbf{主要利用方式及应用领域} ：
+\begin{enumerate}
+\item \textbf{光热转换}：收集太阳辐射能，通过与物质的相互作用转换成热能并加以利用。主要有平板型集热器、真空管型集热器和聚焦型集热器3种 。
+\begin{itemize}
+\item \emph{低温光热转换（小于200℃）}：主要用于太阳能热水器、太阳能干燥器、太阳能蒸馏器、太阳房、太阳能温室、太阳能空调制冷系统等 ；
+\item \emph{中温光热转换（200-800℃）}：主要设备有槽式光热系统、太阳灶和太阳炉等 ；
+\item \emph{高温光热转换（大于800℃）}：主要设备有聚焦型集热器 。
+\end{itemize}
+\item \textbf{太阳能发电}：主要有两种技术手段：
+\begin{itemize}
+\item \emph{太阳能热发电技术}：通过利用中高温集热器将太阳辐射能转换成热能，然后通过热力循环过程进行发电 ；
+\item \textbf{太阳能光伏发电技术}：通过光电器件利用光生伏特效应将太阳辐射能直接转换为电能 。
+\end{itemize}
+\item \textbf{光化学利用}：利用太阳能直接分解水制氢的光——化学转换方式，但目前利用成本高 。
+\item \textbf{光生物利用}：通过光合利用收集与储存太阳能。绿色植物利用光能，将空气中的 \(CO_2\) 和 \(H_2O\) 合成有机物与 \(O_2\) 的过程。目前主要有速生植物（如薪炭林）、地膜覆盖、温室大棚和巨型海藻等 。
+\end{enumerate}
+\end{itemize}
+\end{solution}
+
+% source: docs/review_questions.md | chapter=3. 太阳能发电 | question=2
+\begin{problem}[思考题 2]\label{exer:think_04_solar_02}
+短波辐射与长波辐射的概念？什么是选择性吸收材料，举例说明其应用。
+\end{problem}
+
+\begin{solution}
+\begin{itemize}
+\item \textbf{概念说明}（\emph{注：PDF中未对该两个基础概念作直接文字定义，结合通识简洁回答如下}）：
+\begin{itemize}
+\item \textbf{短波辐射}：通常指波长较短（一般在 \(0.15\sim3.0\,\mu\text{m}\) 之间）的电磁辐射，以太阳辐射为代表。PDF指出太阳绝大部分辐射能量集中在 \(0.30\sim3\,\mu\text{m}\) 波长之间，在太阳能科技领域常把太阳看作是此辐射波谱的黑体 。
+\item \textbf{长波辐射}：通常指波长较长（一般大于 \(3.0\,\mu\text{m}\)）的电磁辐射，主要指地球表面、大气及环境常温物体向外发射的红外热辐射流。
+\end{itemize}
+\item \textbf{选择性吸收材料}：指能够显著增强对太阳（短波）辐射的吸收能力，同时能极大程度减少向外发射红外（长波）热损失的特种功能材料 。
+\item \textbf{举例应用}：在真空管型太阳能集热器或槽式光热发电系统中，大都采用“铝-氮/铝（Al-N/Al）”作为选择性吸收涂层，涂覆在玻璃内管外表面，从而实现高效率的光热转换并锁住热量 。
+\end{itemize}
+\end{solution}
+
+% source: docs/review_questions.md | chapter=3. 太阳能发电 | question=3
+\begin{problem}[思考题 3]\label{exer:think_04_solar_03}
+什么是太阳常数和大气质量？为什么要引入太阳常数和大气质量等概念？
+\end{problem}
+
+\begin{solution}
+\begin{itemize}
+\item \textbf{太阳常数（\(I_{sc}\)）}：在地球大气层外，平均日地距离处，垂直于太阳光方向的单位面积上所获得的太阳辐射能基本上是一个常数。1981年世界气象组织仪器与观测方法委员会第八届会议上，将太阳常数定为 \(I_{sc}=1367\,\text{W/m}^2\) 。
+\item \textbf{大气质量（AM）}：无量纲量，是太阳光线透过地球大气层的实际行程长度与太阳光线在天顶角方向垂直透过地球大气层的行程之比。如写作AM1.5 。
+\item \textbf{引入原因}：引入“太阳常数”是为了建立地球接收太阳能量的初始理论标准基准，用于确定大气层外的输入能量边界 ；引入“大气质量”是为了精确量化太阳辐射穿过大气层时受到的衰减（\textbf{“空间行程越长，产生的衰减越多，到达地面的能量就越少”}），从而用于准确计算地面上不同位置和角度下的实际太阳辐照度 。
+\end{itemize}
+\end{solution}
+
+% source: docs/review_questions.md | chapter=3. 太阳能发电 | question=4
+\begin{problem}[思考题 4]\label{exer:think_04_solar_04}
+太阳能集热器有哪几种常见类型？各自有什么样的特点？
+\end{problem}
+
+\begin{solution}
+根据PDF第4.2.1节，有以下三种常见类型及特点 ：
+\begin{enumerate}
+\item \textbf{平板型}：产水量大，但热效率较低，只适合一般民用 。
+\item \textbf{真空管型}：热效率比较高，但无法满足工业领域的中高温热用户 。
+\item \textbf{聚焦型}：可将工质加热到很高的温度，能够适合中高温热用户 。
+\end{enumerate}
+\end{solution}
+
+% source: docs/review_questions.md | chapter=3. 太阳能发电 | question=5
+\begin{problem}[思考题 5]\label{exer:think_04_solar_05}
+简述平板型集热器与真空管型集热器的区别。
+\end{problem}
+
+\begin{solution}
+\begin{enumerate}
+\item \textbf{结构构造与隔热方式}：平板型由透明盖板、保温材料和镀有吸收膜的吸热板组成，内部非真空 ；而真空管型将吸热板和盖板间抽真空，结构类似保温瓶，由玻璃内外管、夹层真空以及内管外表面的选择性吸收涂层组成 。
+\item \textbf{工质温度与适用领域}：平板型工质温度通常低于 80°C，主要用于一般民用的生活热水、采暖 ；真空管型出水温度高、热效率高，更利于在家庭独立民用系统或低温环境中工作，但两者均无法满足工业中高温热用户需求 。
+\item \textbf{抗外冲击能力与寿命成本}：平板型可靠性高、寿命长，吸热面积大，且“承压和抗外界冲击能力较强”，便于与建筑一体化设计，成本低 ；真空管型因属于玻璃结构，具有“易碎，抗冲击能力弱”的缺点，且制造成本较高 。
+\end{enumerate}
+\end{solution}
+
+% source: docs/review_questions.md | chapter=3. 太阳能发电 | question=6
+\begin{problem}[思考题 6]\label{exer:think_04_solar_06}
+为什么聚焦型集热器可以将工质加热到很高的温度？
+\end{problem}
+
+\begin{solution}
+根据热平衡公式，衡量其聚光程度的特征参数是“聚光比（\(c=\frac{A_c}{A_r}=\frac{a}{d}\)）”，即聚光器和接收器的有效面积比值 。聚焦型集热器通过将大面积（\(A_c\)）接收到的太阳直射辐射通过抛物面镜离散化或曲面镜汇聚反射到面积非常狭小（\(A_r\)）的接收器上，从而使接收器单位面积上获得的太阳能辐照度增加成百上千倍 。 根据理论热平衡公式：\(T^4=(\frac{A_c}{A_r})(\frac{\alpha_r}{\epsilon_r})(\frac{I\rho}{\sigma})\)，接收器有效面积相对于聚光器越小（即聚光比 \(c\) 越高），理论平衡工作温度就越高（例如当聚光比 \(c=1000\) 时，理论温度可达 1932K；\(c=3000\) 时，理论温度可达 2540K） 。
+\end{solution}
+
+% source: docs/review_questions.md | chapter=3. 太阳能发电 | question=7
+\begin{problem}[思考题 7]\label{exer:think_04_solar_07}
+光热发电的基本原理是什么？光热发电系统一般由那几部分组成？
+\end{problem}
+
+\begin{solution}
+\begin{itemize}
+\item \textbf{基本原理}：通过利用中高温集热器将太阳辐射能转换成热能，然后通过热力循环过程（蒸汽驱动汽轮发电机组做功）进行发电 。
+\item \textbf{系统组成部分}：结合槽式和塔式系统的通用框架，一般由以下五大部分组成 ：
+\begin{enumerate}
+\item \textbf{聚光集热系统}：如定日镜场/槽式反射镜、顶部的接收器（吸热塔、集热管）。
+\item \textbf{储热系统}：如高温储热罐、低温储热罐，内部通常使用熔融盐等储热材料 。
+\item \textbf{换热系统（蒸汽发生系统）}：如热交换器或包含过热器、再热器、给水预热器的蒸汽发生器 。
+\item \textbf{发电系统}：汽轮机（透平机）和发电机组 。
+\item \textbf{辅助和冷却系统}：冷凝器、冷却塔、冷/热熔盐泵、给水泵以及并网变电站等 。
+\end{enumerate}
+\end{itemize}
+\end{solution}
+
+% source: docs/review_questions.md | chapter=3. 太阳能发电 | question=8
+\begin{problem}[思考题 8]\label{exer:think_04_solar_08}
+简述塔式光热发电系统的组成结构和工作原理。
+\end{problem}
+
+\begin{solution}
+\begin{itemize}
+\item \textbf{组成结构}：主要由定日镜场（阵列排列的平面镜）、吸热塔、接收器（热吸器）、高温储热罐、低温储热罐、冷/热熔盐泵、蒸汽发生器（过热器、再热器、给水预热器）、汽轮发电机组（透平、发电机）及辅助水冷和变电并网设备组成 。
+\item \textbf{工作原理}：
+\begin{enumerate}
+\item \emph{聚光集热}：定日镜场通过光学跟踪系统跟踪太阳位置，将大面积的太阳光线精准汇聚到位于中央的吸热塔顶部的接收器（热吸器）上 。
+\item \emph{熔盐吸热与储热}：低温储热罐内约290°C的冷熔盐（硝酸钠、硝酸钾混合物）在冷熔盐泵驱动下送入塔顶热吸器，吸收汇聚的太阳能后被加热至约565°C的高温，流回并储存在高温储热罐中 。
+\item \emph{换热发电循环}：高温熔盐在热熔盐泵的输送下进入蒸汽发生器，通过过热、再热等过程与水系统进行热交换 。熔盐放热降温至290°C并返回低温储热罐待循环；而水吸收热量汽化为高温高压过热蒸汽，通入汽轮机中膨胀做功，驱动发电机发电并由变电站输送至电网 。
+\end{enumerate}
+\end{itemize}
+\end{solution}
+
+% source: docs/review_questions.md | chapter=3. 太阳能发电 | question=9
+\begin{problem}[思考题 9]\label{exer:think_04_solar_09}
+有哪几种主要的太阳能储热方式？各种方式储热原理是什么？
+\end{problem}
+
+\begin{solution}
+\begin{enumerate}
+\item \textbf{显热储存}：利用物质在不发生气固液相变的情况下，由于温度升高或降低所吸收或释放的热量来进行储热。假设物性不变，其积分为 \(\mathcal{Q}=mc(T_2-T_1)\)。液体储热以水为主，固体储热使用熔沸点高、不易反应腐蚀的材料 。
+\item \textbf{潜热储存（相变储热）}：利用物质发生固-液或液-气等相变时所吸收或放出的热量（称为相变潜热）来进行储热。其公式为 \(Q = m\lambda\)（\(\lambda\) 为相变潜热） 。
+\item \textbf{化学储热}：利用可逆化学反应进行储热。当温度高于可逆反应平衡温度时，进行吸热反应储存太阳能；低于平衡温度时进行放热反应释放热量（例如：氨吸收太阳能分解成氢气和氮气储存能量，在一定条件下进行逆向放热反应重新生成氨） 。
+\end{enumerate}
+\end{solution}
+
+% source: docs/review_questions.md | chapter=3. 太阳能发电 | question=10
+\begin{problem}[思考题 10]\label{exer:think_04_solar_10}
+什么是 P 型半导体和 N 型半导体？简述 P-N 节的形成机理。
+\end{problem}
+
+\begin{solution}
+\begin{itemize}
+\item \textbf{P型与N型半导体}：纯净半导体中引入不同元素进行掺杂。掺入5价原子（如磷）形成\textbf{N型半导体}，其以电子为导电多子；掺入3价原子（如硼）形成\textbf{P型半导体}，其以空穴为导电多子 。
+\item \textbf{P-N结的形成机理}：
+\begin{enumerate}
+\item \emph{扩散运动}：由于P型区和N型区接触面存在电子和空穴的浓度差，电子和空穴开始发生跨交界面的扩散运动 。
+\item \emph{电子、空穴耗尽}：扩散过去的电子与空穴在交界面附近相遇并复合消失，导致P-N结交界面处的电子和空穴耗尽，形成了空间电荷区（耗尽区） 。
+\item \emph{带电离子驻留}：失去载流子后，3价和5价的掺杂杂质原子变成无法移动的带电离子留在原地（P区一侧留下带负电的受主离子，N区一侧留下带正电的施主离子） 。
+\item \emph{形成内建电场}：这些静止的正负离子在交界面处产生了一个由N区指向P区的\textbf{内建电场}（掺杂浓度越大，内建电场越强） 。内建电场会阻止多子的进一步扩散，并引起少子的漂移运动，最终扩散与漂移达到动态平衡，形成了稳定的P-N结 。
+\end{enumerate}
+\end{itemize}
+\end{solution}
+
+% source: docs/review_questions.md | chapter=3. 太阳能发电 | question=11
+\begin{problem}[思考题 11]\label{exer:think_04_solar_11}
+影响太阳能电池光电转换效率的因素有哪些，请分别简述。
+\end{problem}
+
+\begin{solution}
+\begin{enumerate}
+\item \textbf{极限效率限制}：填充因子FF是开路电压 \(U_{oc}\) 的函数，\(U_{oc}\) 越大，效率 \(\eta\) 越大 。由于硅材料本身特性限制，最大 \(U_{oc}\) 约为 700mV，最高填充因子FF为0.84，使得硅最高转换效率极限约为 29.1\% 。
+\item \textbf{短路电流损失（\(I_{sc}\) 损失）} ：
+\begin{itemize}
+\item \emph{表面反射}：裸露的硅表面反射率很高，光子未进入内部（需要制备绒面和减反射膜减少损失） ；
+\item \emph{电极遮光}：电池表面的栅线和电极会遮挡住 5\%\textasciitilde{}15\% 的入射光照 ；
+\item \emph{厚度不足}：如果电池薄片不够厚，强光可直接穿出太阳能电池板，转换为热量使其升温而不能激发产生载流子 。
+\end{itemize}
+\item \textbf{开路电压损失（\(U_{oc}\) 损失）}：决定开路电压的主要因素是半导体中的复合（复合过程释放能量，不利于光电转换） 。在内建电场作用下，p-n结耗尽区的复合速度很大，从而造成开路电压损失 。
+\item \textbf{温度影响}：随着温度升高，开路电压 \(U_{oc}\) 近似线性地减小，光电转换效率随温度升高而降低 。对于硅电池，\textbf{“温度每升高 1℃，输出功率将减少 0.4\%\textasciitilde{}0.5\%”} 。
+\end{enumerate}
+\end{solution}
+
+% source: docs/review_questions.md | chapter=3. 太阳能发电 | question=12
+\begin{problem}[思考题 12]\label{exer:think_04_solar_12}
+简述太阳能光伏发电系统的主要组成及各部分的作用。
+\end{problem}
+
+\begin{solution}
+\begin{enumerate}
+\item \textbf{太阳能电池（光伏板组件）}：是发电系统的核心。通过光电器件利用光生伏特效应将接收到的太阳辐射能直接转换为直流电能 。
+\item \textbf{储能电池（蓄电池）}：能量存储与调节核心。在光伏发电充足情况下，从直流母线吸收能量进行充电；在光伏发电不足、夜间或无光照情况下，实现对负载的放电供电，保障供电连续性 。
+\item \textbf{逆变器（DC/AC 变换器）}：通常采用三相全桥逆变电路等构造，负责将太阳能电池或蓄电池输出的低压直流电（DC）转化成负载或电网所需的交流电（AC），并可通过 PWM 占空比调整电压 。
+\item \textbf{系统保护与控制部件（包含变换器及控制系统）}：
+\begin{itemize}
+\item \textbf{DC/DC变换器（如 Boost 变换器、双向充放电电路）}：实现对低压直流电进行升压传输，或控制蓄电池充放电 ；
+\item \textbf{MPPT控制系统}：运行控制算法（如恒电压跟踪 CVT、电导增量法），实时调整变换器输出来跟踪太阳能电池板的最大功率点，使电池板尽可能工作在最大输出功率下，充分提高转换效率 ；
+\item \textbf{系统保护部件}：防止系统发生过充、过放、短路等异常，保证系统安全运行 。
+\end{itemize}
+\end{enumerate}
+\end{solution}
+
+\section{计算题}
+
+% index: calc_04_solar_p014_01 | source=others/04_太阳能发电.pdf | page=14 | slide=4.1.1 太阳概况-太阳辐射功率 | status=checked
+\begin{problem}[维恩位移定律求太阳表面有效温度]\label{exer:calc_04_solar_p014_01}
+根据太阳光谱，已知峰值波长 \(\lambda_m = \qty{0.5023}{um}\)，维恩位移常数 \(b = \qty{2897.8}{um.K}\)。求太阳表面的有效温度 \(T\)。
+\end{problem}
+
+\begin{solution}
+维恩位移定律为：
+\begin{equation}
+\lambda_m T = b.
+\end{equation}
+代入数据：
+\begin{equation}
+T = \frac{b}{\lambda_m}
+  = \frac{\qty{2897.8}{um.K}}{\qty{0.5023}{um}}
+  \approx \qty{5769}{K}.
+\end{equation}
+\end{solution}
+
+% index: calc_04_solar_p015_01 | source=others/04_太阳能发电.pdf | page=15 | slide=4.1.1 太阳概况-太阳辐射功率 | status=checked
+\begin{problem}[斯特番-波耳兹曼定律]\label{exer:calc_04_solar_p015_01}
+写出黑体单位面积辐射功率 \(M\) 与绝对温度 \(T\) 的关系。课件给出太阳总辐射功率约为 \(3.8 \times 10^{20}\ \unit{MW}\)，到达地球大气层上界的辐射功率约为其 \(22\) 亿分之一。整理该页的计算关系。
+\end{problem}
+
+\begin{solution}
+斯特番-波耳兹曼光辐射定律为：
+\begin{equation}
+M = \sigma T^4.
+\end{equation}
+式中，\(M\) 为单位面积黑体辐射功率，\(\sigma = 5.67 \times 10^{-8}\ \unit{W/(m^2.K^4)}\)。课件给出的到达地球大气层上界辐射功率为：
+\begin{equation}
+P_{\text{地球上界}}
+\approx \frac{3.8 \times 10^{20}\ \unit{MW}}{22 \times 10^8}
+\approx 1.73 \times 10^{11}\ \unit{MW}.
+\end{equation}
+\end{solution}
+
+% index: calc_04_solar_p024_01 | source=others/04_太阳能发电.pdf | page=24 | slide=4.1.2 日地天文关系-日地距离 | status=checked
+\begin{problem}[地球轨道偏心修正系数]\label{exer:calc_04_solar_p024_01}
+设 \(r_0\) 为日地平均距离，\(r\) 为观测点日地距离，\(d_n\) 为一年中某一天的顺序数。写出地球轨道偏心修正系数 \(\xi_0\) 的 Spencer 公式和工程简化公式。
+\end{problem}
+
+\begin{solution}
+Spencer 修正公式为：
+\begin{equation}
+\xi_0
+= \left(\frac{r_0}{r}\right)^2
+= 1.00011 + 0.034221\cos\Gamma + 0.00128\sin\Gamma
++ 0.000719\cos2\Gamma + 0.000077\sin2\Gamma.
+\end{equation}
+日角为：
+\begin{equation}
+\Gamma = \frac{2\pi(d_n - 1)}{365}.
+\end{equation}
+太阳能工程设计中的简化计算式为：
+\begin{equation}
+\xi_0 = 1 + 0.033\cos\frac{360d_n}{370}.
+\end{equation}
+\end{solution}
+
+% index: calc_04_solar_p028_01 | source=others/04_太阳能发电.pdf | page=28 | slide=4.1.3 大气质量 | status=checked
+\begin{problem}[大气质量计算]\label{exer:calc_04_solar_p028_01}
+当太阳高度角 \(\alpha_s < 30^\circ\) 时，考虑折射和地面曲率影响，写出大气质量 \(m(\alpha_s)\) 的实用计算式；再写出高海拔气压修正式。
+\end{problem}
+
+\begin{solution}
+课件给出的实用计算式为：
+\begin{equation}
+m(\alpha_s)
+= \left[1229 + (614\sin\alpha_s)^2\right]^{1/2}
+- 614\sin\alpha_s.
+\end{equation}
+对海拔较高的地区，可按气压修正：
+\begin{equation}
+m(z,\alpha_s)
+= m(\alpha_s)\frac{P(z)}{760}.
+\end{equation}
+式中，\(z\) 为观测点海拔高度，\(P(z)\) 为观测地点大气压力，单位按课件为 \(\unit{mmHg}\)。
+\end{solution}
+
+% index: calc_04_solar_p029_01 | source=others/04_太阳能发电.pdf | page=29 | slide=4.1.3 大气透明度 | status=checked
+\begin{problem}[大气透明度与法向太阳辐射强度]\label{exer:calc_04_solar_p029_01}
+根据 Bouguer-Lambert 定律，写出波长为 \(\lambda\) 的法向太阳辐射强度经过大气后的表达式，并给出全色太阳辐射强度 \(I_n\) 的经验形式。
+\end{problem}
+
+\begin{solution}
+课件给出的微分衰减关系为：
+\begin{equation}
+dI_{\lambda,n} = -K_\lambda I_{\lambda,0}\,dm.
+\end{equation}
+积分后有：
+\begin{equation}
+I_{\lambda,n} = I_{\lambda,0}e^{-K_\lambda m}
+= I_{\lambda,0}P_\lambda^m,
+\end{equation}
+其中 \(P_\lambda = e^{-K_\lambda}\)。对全波段积分后，课件给出：
+\begin{equation}
+I_n = \xi_0 I_{sc}P^m,
+\end{equation}
+且
+\begin{equation}
+P = \sqrt[m]{\frac{I_n}{\xi_0 I_{sc}}}.
+\end{equation}
+\end{solution}
+
+% index: calc_04_solar_p031_01 | source=others/04_太阳能发电.pdf | page=31 | slide=4.1.4 地球表面太阳辐射强度的计算-水平面 | status=checked
+\begin{problem}[水平面直射辐照度]\label{exer:calc_04_solar_p031_01}
+写出水平面太阳总辐射强度 \(I\) 的组成，以及水平面太阳直射辐照度 \(I_b\) 的计算式。
+\end{problem}
+
+\begin{solution}
+水平面太阳总辐射强度由直射辐射强度与散射辐射强度组成：
+\begin{equation}
+I = I_b + I_d.
+\end{equation}
+水平面逐时太阳能直射辐照度为：
+\begin{equation}
+I_b = I_n\sin\alpha_s = I_n\cos\theta_z.
+\end{equation}
+结合大气透明度模型，可得：
+\begin{equation}
+I_b = \xi_0 I_{sc}P^m\sin\alpha_s.
+\end{equation}
+\end{solution}
+
+% index: calc_04_solar_p032_01 | source=others/04_太阳能发电.pdf | page=32 | slide=4.1.4 地球表面太阳辐射强度的计算-水平面 | status=checked
+\begin{problem}[水平面散射辐射强度]\label{exer:calc_04_solar_p032_01}
+晴天到达地球表面的太阳散射辐射强度主要取决于太阳高度角和大气透明度。写出课件给出的水平面太阳散射辐射强度 \(I_d\) 经验计算式。
+\end{problem}
+
+\begin{solution}
+课件给出的经验式为：
+\begin{equation}
+I_d
+= \frac{1}{2}\xi_0 I_{sc}
+\left[\frac{1 - P^m}{1 - 1.4\ln P}\right]\sin\alpha_s.
+\end{equation}
+式中，\(\xi_0\) 为地球轨道偏心修正系数，\(I_{sc}\) 为太阳常数，\(P\) 为大气透明系数，\(m\) 为大气质量，\(\alpha_s\) 为太阳高度角。
+\end{solution}
+
+% index: calc_04_solar_p033_01 | source=others/04_太阳能发电.pdf | page=33 | slide=4.1.4 地球表面太阳辐射强度的计算-倾斜面 | status=checked
+\begin{problem}[倾斜面直射辐射强度]\label{exer:calc_04_solar_p033_01}
+倾斜面太阳总辐射强度由直射、散射和反射三部分组成。写出 \(I_T\) 的组成式，并给出倾斜面直射辐射强度 \(I_{b,T}\) 与水平面直射辐射强度 \(I_b\) 的关系。
+\end{problem}
+
+\begin{solution}
+倾斜面太阳总辐射强度为：
+\begin{equation}
+I_T = I_{b,T} + I_{d,T} + I_{g,T}.
+\end{equation}
+倾斜面与水平面直射辐射强度之比为：
+\begin{equation}
+R_b = \frac{I_{b,T}}{I_b}
+= \frac{I_n\cos\theta}{I_n\cos\theta_z}
+= \frac{\cos\theta}{\cos\theta_z}.
+\end{equation}
+因此
+\begin{equation}
+I_{b,T} = I_b R_b.
+\end{equation}
+\end{solution}
+
+% index: calc_04_solar_p034_01 | source=others/04_太阳能发电.pdf | page=34 | slide=4.1.4 地球表面太阳辐射强度的计算-倾斜面 | status=checked
+\begin{problem}[倾斜面反射辐射强度]\label{exer:calc_04_solar_p034_01}
+假定地面反射辐射为各向同性，写出倾斜面反射辐射强度 \(I_{g,T}\) 的计算式。
+\end{problem}
+
+\begin{solution}
+课件给出的倾斜面反射辐射强度为：
+\begin{equation}
+I_{g,T}
+= I\rho\frac{1-\cos\beta}{2}.
+\end{equation}
+由于 \(I = I_b + I_d\)，也可写成：
+\begin{equation}
+I_{g,T}
+= (I_b + I_d)\rho\frac{1-\cos\beta}{2}.
+\end{equation}
+式中，\(\rho\) 为地面反射率，主要取决于地面状态，\(\beta\) 为倾斜面倾角。
+\end{solution}
+
+% index: calc_04_solar_p036_01 | source=others/04_太阳能发电.pdf | page=36 | slide=4.1.4 地球表面太阳辐射强度的计算-倾斜面 | status=checked
+\begin{problem}[倾斜面散射辐射强度]\label{exer:calc_04_solar_p036_01}
+根据 Perez 模型，写出倾斜面散射辐射强度 \(I_{d,T}\) 的表达式，并列出其中 \(F_1\)、\(F_2\) 的计算关系。
+\end{problem}
+
+\begin{solution}
+课件给出的 Perez 模型为：
+\begin{equation}
+I_{d,T}
+= I_d\left[(1-F_1)\frac{1+\cos\beta}{2}
++ F_1\frac{a}{b}
++ F_2\sin\beta\right].
+\end{equation}
+其中：
+\begin{equation*}
+\begin{aligned}
+F_1 &= \max\left\{0, f_{11} + f_{12}\Delta + \frac{\pi\theta_s}{180}f_{13}\right\},\\
+F_2 &= f_{21} + f_{22}\Delta + \frac{\pi\theta_s}{180}f_{23}.
+\end{aligned}
+\end{equation*}
+清晰度 \(\varepsilon\) 与水平面散射辐射强度 \(I_d\)、法向太阳辐射强度 \(I_n\) 有关：
+\begin{equation}
+\varepsilon
+= \frac{(I_d + I_n)/I_d + 5.535 \times 10^{-6}\theta_s^3}
+{1 + 5.535 \times 10^{-6}\theta_s^3}.
+\end{equation}
+\end{solution}
+
+% index: calc_04_solar_p065_01 | source=others/04_太阳能发电.pdf | page=65 | slide=4.2.4 聚焦型太阳能集热器-工质温度计算 | status=checked
+\begin{problem}[聚焦型太阳能集热器工质温度]\label{exer:calc_04_solar_p065_01}
+聚焦型太阳能集热器假定工质不流动，接收器吸收热量和对外散发热量相等。设聚光器有效面积为 \(A_c\)，接收器有效面积为 \(A_r\)，辐射通量为 \(I\)，聚光器反射率为 \(\rho\)，接收器吸收率为 \(\alpha_r\)，接收器发射率为 \(\varepsilon_r\)，波尔茨曼常数为 \(\sigma\)。写出工质温度 \(T\) 的计算式。
+\end{problem}
+
+\begin{solution}
+热平衡关系为：
+\begin{equation}
+A_c I\rho\alpha_r = A_r\varepsilon_r\sigma T^4.
+\end{equation}
+因此
+\begin{equation}
+T^4 = \frac{A_c}{A_r}\frac{\alpha_r}{\varepsilon_r}\frac{I\rho}{\sigma}.
+\end{equation}
+设聚光比 \(c = A_c/A_r\)，则
+\begin{equation}
+T = \left(c\frac{\alpha_r}{\varepsilon_r}\frac{I\rho}{\sigma}\right)^{1/4}.
+\end{equation}
+课件给出示例结果：\(c = 1000\) 时 \(T = \qty{1932}{K}\)，\(c = 3000\) 时 \(T = \qty{2540}{K}\)；实际因工质流动达不到该温度。
+\end{solution}
+
+% index: calc_04_solar_p102_01 | source=others/04_太阳能发电.pdf | page=102 | slide=4.3.6 太阳能储热技术-化学储热 | status=checked
+\begin{problem}[化学储热可逆反应平衡温度]\label{exer:calc_04_solar_p102_01}
+可逆化学反应 \(AB + Q \rightleftharpoons A + B\) 可用于储热。写出课件给出的可逆反应平衡温度 \(T_c\) 的计算式，并说明温度高低对应的反应方向。
+\end{problem}
+
+\begin{solution}
+课件给出的平衡温度为：
+\begin{equation}
+T_c = \frac{\Delta H^\circ_{298}}{\Delta S^\circ_{298}}.
+\end{equation}
+温度高于平衡温度时，进行吸热反应；低于平衡温度时，进行放热反应。
+\end{solution}
+
+% index: calc_04_solar_p121_01 | source=others/04_太阳能发电.pdf | page=121 | slide=4.4.3.1 太阳能电池的工作特性-输出特性 | status=checked
+\begin{problem}[太阳能电池电流-电压关系]\label{exer:calc_04_solar_p121_01}
+写出太阳能电池电流 \(I\) 与电压 \(U\) 的关系式，并说明 \(I_0\)、\(q\)、\(T\)、\(K\)、\(I_L\) 的含义。
+\end{problem}
+
+\begin{solution}
+课件给出的输出特性关系为：
+\begin{equation}
+I = I_0\left(e^{qU/(KT)} - 1\right) - I_L.
+\end{equation}
+式中，\(I_0\) 为饱和电流密度，\(q\) 为电子电荷，\(T\) 为热力学温度，\(K\) 为波尔茨曼常数，\(I_L\) 为光生电流，理想情况下等于短路电流。
+\end{solution}
+
+% index: calc_04_solar_p122_01 | source=others/04_太阳能发电.pdf | page=122 | slide=4.4.3.1 太阳能电池的工作特性-输出特性 | status=checked
+\begin{problem}[光生电流]\label{exer:calc_04_solar_p122_01}
+太阳能电池短路时，负载电阻 \(R_L=0\)，输出电压为 \(0\)。写出光生电流或短路电流 \(I_{sc}\) 的计算公式。
+\end{problem}
+
+\begin{solution}
+课件给出的光生电流计算公式为：
+\begin{equation}
+I_{sc} = I_L = qAG(L_e + W + L_h).
+\end{equation}
+式中，\(A\) 为横截面积，\(q\) 为电子电荷，\(G\) 为电子-空穴对产生率，\(W\) 为耗尽区宽度，\(L_e\)、\(L_h\) 分别为 \(p\) 型区和 \(n\) 型区扩散长度。
+\end{solution}
+
+% index: calc_04_solar_p123_01 | source=others/04_太阳能发电.pdf | page=123 | slide=4.4.3.1 太阳能电池的工作特性-输出特性 | status=checked
+\begin{problem}[开路电压]\label{exer:calc_04_solar_p123_01}
+令太阳能电池输出电流 \(I = 0\)，推得理想情况下开路电压 \(U_{OC}\) 的表达式。
+\end{problem}
+
+\begin{solution}
+由输出特性令 \(I = 0\)，课件给出开路电压：
+\begin{equation}
+U_{OC}
+= \frac{KT}{q}\ln\left(\frac{I_L}{I_0}+1\right).
+\end{equation}
+太阳能电池开路时，负载电阻 \(R_L\) 无穷大，通过电流为 \(0\)，过剩载流子积累在 PN 结附近，从而产生最大光生电动势。
+\end{solution}
+
+% index: calc_04_solar_p125_01 | source=others/04_太阳能发电.pdf | page=125 | slide=4.4.3.1 太阳能电池的工作特性-输出特性 | status=checked
+\begin{problem}[填充因子定义]\label{exer:calc_04_solar_p125_01}
+太阳能电池在最大功率点的工作电压和工作电流分别为 \(U_{mp}\)、\(I_{mp}\)，开路电压和短路电流分别为 \(U_{OC}\)、\(I_{SC}\)。写出填充因子 \(FF\)。
+\end{problem}
+
+\begin{solution}
+课件给出的填充因子为：
+\begin{equation}
+FF = \frac{U_{mp}I_{mp}}{U_{OC}I_{SC}}.
+\end{equation}
+一般条件下，填充因子在 \(0.7\) 至 \(0.85\) 之间。
+\end{solution}
+
+% index: calc_04_solar_p126_01 | source=others/04_太阳能发电.pdf | page=126 | slide=4.4.3.1 太阳能电池的工作特性-输出特性 | status=checked
+\begin{problem}[填充因子经验式]\label{exer:calc_04_solar_p126_01}
+设归一化开路电压为 \(v_{OC}\)。写出课件给出的填充因子 \(FF\) 经验计算式。
+\end{problem}
+
+\begin{solution}
+课件给出的经验式为：
+\begin{equation}
+FF = \frac{v_{OC} - \ln(v_{OC}+0.72)}{v_{OC}+1}.
+\end{equation}
+课件举例说明，GaAs 太阳能电池可以具有接近 \(0.89\) 的 \(FF\)。
+\end{solution}
+
+% index: calc_04_solar_p127_01 | source=others/04_太阳能发电.pdf | page=127 | slide=4.4.3.1 太阳能电池的工作特性-输出特性 | status=checked
+\begin{problem}[太阳能电池能量转换效率]\label{exer:calc_04_solar_p127_01}
+写出太阳能电池能量转换效率 \(\eta\) 与最大功率点参数、开路电压、短路电流和填充因子的关系。
+\end{problem}
+
+\begin{solution}
+课件给出的能量转换效率为：
+\begin{equation}
+\eta = \frac{U_{mp}I_{mp}}{P_{in}}
+= \frac{U_{OC}I_{SC}FF}{P_{in}}.
+\end{equation}
+其中，\(P_{in}\) 为入射太阳辐射功率。目前商用单晶硅太阳能电池的能量转换效率在 \(18\%\) 至 \(24\%\)。
+\end{solution}
+
+% index: calc_04_solar_p131_01 | source=others/04_太阳能发电.pdf | page=131 | slide=4.4.3.2 极限效率和效率损失-极限效率 | status=checked
+\begin{problem}[硅太阳能电池极限效率]\label{exer:calc_04_solar_p131_01}
+课件指出对于硅，最大开路电压 \(U_{OC}\) 约为 \(\qty{700}{mV}\)，相应最高填充因子 \(FF\) 为 \(0.84\)。结合最大短路电流 \(I_{SC}\)，给出最高转换效率结果，并说明提高 \(U_{OC}\) 时 \(I_0\) 的要求。
+\end{problem}
+
+\begin{solution}
+效率关系为：
+\begin{equation}
+\eta = \frac{U_{OC}I_{SC}FF}{P_{in}}.
+\end{equation}
+课件给出的硅太阳能电池最高转换效率约为：
+\begin{equation}
+\eta_{\max} \approx 29.1\%.
+\end{equation}
+由
+\begin{equation}
+U_{OC} = \frac{KT}{q}\ln\left(\frac{I_L}{I_0}+1\right)
+\end{equation}
+可知，要得到较大的开路电压 \(U_{OC}\)，\(I_0\) 需要尽可能小。
+\end{solution}
+
+% index: calc_04_solar_p157_01 | source=others/04_太阳能发电.pdf | page=157 | slide=4.4.5 太阳能光伏发电系统-固定安装 | status=checked
+\begin{problem}[固定安装阵列间距校核]\label{exer:calc_04_solar_p157_01}
+为使太阳电池输出功率不受影响，应保证在影子最长的冬至日，从午前 \(9:00\) 至午后 \(15:00\)，前板影子不会遮挡后板。根据课件图示，说明阵列间距校核需要计算哪些太阳位置量。
+\end{problem}
+
+\begin{solution}
+课件说明冬至时应计算太阳能电池板安装地点在 \(9:00\) 或 \(15:00\) 的太阳高度角 \(h\) 与太阳方位角 \(\alpha\)。利用 \(h\) 与 \(\alpha\) 可校核前后板间距 \(L_s\)、板高 \(L\) 和地面间隙 \(e\) 下是否遮挡。
+\end{solution}
+
+% index: calc_04_solar_p169_01 | source=others/04_太阳能发电.pdf | page=169 | slide=4.4.5 太阳能光伏发电系统-最大功率点控制 | status=checked
+\begin{problem}[最大功率点跟踪控制]\label{exer:calc_04_solar_p169_01}
+最大功率点跟踪控制 MPPT 使太阳能电池板在不同日照和温度环境下尽可能工作在最大功率点。根据课件，说明 MPPT 需要采集和计算哪些电气量。
+\end{problem}
+
+\begin{solution}
+课件给出的 MPPT 过程为：采集电池阵列输出电压与电流，根据相应控制算法调整变换器输出采空比，使电池板工作于最大功率点；变换器输出端电压与电流检测用于计算机对输出控制的参考。核心计算量为：
+\begin{equation}
+P = UI.
+\end{equation}
+\end{solution}
+
+% index: calc_04_solar_p171_01 | source=others/04_太阳能发电.pdf | page=171 | slide=4.4.5 太阳能光伏发电系统-最大功率点控制 | status=checked
+\begin{problem}[恒电压跟踪温度修正]\label{exer:calc_04_solar_p171_01}
+恒电压跟踪 CVT 认为温度一定时最大功率点基本在一根垂直线上。以单晶硅电池为例，温度每升高 \(\qty{1}{\degreeCelsius}\)，开路电压下降率为 \(0.35\%\) 至 \(0.45\%\)。说明该方法如何进行温度修正。
+\end{problem}
+
+\begin{solution}
+课件给出的修正思想是：当温度变化不大、日照稳定时，保持输出电压在近似最大功率点电压 \(U_m\) 附近；当环境温度变化时，根据环境温度信号修正 \(U_m\)，以补偿温度变化带来的功率损失。单晶硅电池可按
+\begin{equation}
+\Delta U_{OC} \approx -(0.35\%\sim0.45\%)U_{OC}\Delta T
+\end{equation}
+估算温升导致的开路电压下降。
+\end{solution}
+
+% index: calc_04_solar_p172_01 | source=others/04_太阳能发电.pdf | page=172 | slide=4.4.5 太阳能光伏发电系统-最大功率点控制 | status=checked
+\begin{problem}[电导增量法最大功率点判据]\label{exer:calc_04_solar_p172_01}
+电导增量法通过比较太阳能电池瞬时电导和电导变化量来计算最大功率点。设输出功率为 \(P\)，输出电压为 \(U\)。写出最大功率点附近的判据。
+\end{problem}
+
+\begin{solution}
+最大功率点处功率-电压曲线斜率为零：
+\begin{equation}
+\frac{dP}{dU} = 0.
+\end{equation}
+当电池板输出电压小于 \(U_m\) 时，曲线斜率为正：
+\begin{equation}
+\frac{dP}{dU} > 0.
+\end{equation}
+当电池板输出电压大于 \(U_m\) 时，曲线斜率为负：
+\begin{equation}
+\frac{dP}{dU} < 0.
+\end{equation}
+\end{solution}
