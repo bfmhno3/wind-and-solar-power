@@ -20,9 +20,7 @@
 \end{problem}
 
 \begin{solution}
-\begin{itemize}
-\item PDF 中并未直接提供标有“风的主要特征”的统一定义文本。结合文中相关章节内容，风的主要特征可简洁凝练地概括为：\textbf{风向}（风吹来的方向）与\textbf{风速}（或风力等级） ；此外，风速具有不恒定、时刻变化的\textbf{随机性}与\textbf{脉动性}（脉动风速=瞬时风速-平均风速），且风速会\textbf{随时间和高度发生变化}（如近地面午后风速大、清晨风速小，且在一定范围内随高度增加而增大） 。
-\end{itemize}
+风的主要特征可概括为：\textbf{风向}（风吹来的方向）与\textbf{风速}（或风力等级） ；此外，风速具有不恒定、时刻变化的\textbf{随机性}与\textbf{脉动性}（脉动风速=瞬时风速-平均风速），且风速会\textbf{随时间和高度发生变化}（如近地面午后风速大、清晨风速小，且在一定范围内随高度增加而增大） 。
 \end{solution}
 
 % source: docs/review_questions.md | chapter=2. 风力发电 | question=3
@@ -235,11 +233,11 @@
 \end{problem}
 
 \begin{solution}
-课件给出的风速高度经验公式为：
+风速高度经验公式为：
 \begin{equation}
 v = v_1 \left(\frac{h}{h_1}\right)^\alpha.
 \end{equation}
-式中，\(h_1\) 为已知风速对应高度，\(h\) 为待求高度。课件未给数值，代入高度、风速和 \(\alpha\) 后即可求 \(v\)。
+式中，\(h_1\) 为已知风速对应高度，\(h\) 为待求高度。代入高度、风速和 \(\alpha\) 后即可求 \(v\)。
 \end{solution}
 
 % index: calc_03_wind_p027_01 | source=others/03_风力发电.pdf | page=27 | slide=3.1.5 风能 | status=checked
@@ -277,18 +275,18 @@ w = \frac{1}{2}\rho v^3.
 \end{equation}
 设 \(v_1\) 为风机启动风速，\(v_2\) 为停机风速，\(P'(v)\) 为风速概率分布函数，则有效风能密度为：
 \begin{equation}
-w_i
+\overline{w}_i
 = \int_{v_1}^{v_2}\frac{1}{2}\rho v^3 P'(v)\,dv.
 \end{equation}
 \end{solution}
 
 % index: calc_03_wind_p037_01 | source=others/03_风力发电.pdf | page=37 | slide=3.1.6 风电厂选址原则 | status=checked
 \begin{problem}[风资源丰富区指标判断]\label{exer:calc_03_wind_p037_01}
-按课件给出的风电厂选址原则，判断某场址是否属于风资源丰富地区时，应检查哪些计算指标？写出对应阈值。
+按风电厂选址原则，判断某场址是否属于风资源丰富地区时，应检查哪些计算指标？写出对应阈值。
 \end{problem}
 
 \begin{solution}
-课件给出的风资源丰富地区指标为：
+风资源丰富地区指标为：
 \begin{equation*}
 \begin{aligned}
 \overline{v} &> \qty{6}{m/s},\\
@@ -300,12 +298,11 @@ w_i &> \qty{300}{W/m^2}.
 \end{solution}
 
 % index: calc_03_wind_p040_01 | source=others/03_风力发电.pdf | page=40 | slide=风力发电机组选型和布置 | status=checked
-\begin{problem}[5.5-172 机组年发电量与减排量]\label{exer:calc_03_wind_p040_01}
-东方风电 5.5-172 型永磁直驱风电机组单机容量为 \(\qty{5}{MW}\)，叶轮直径为 \(\qty{172}{m}\)。课件给出在设计风速下，单台机组每年可输出 \(2200 \times 10^4\ \unit{kWh}\) 电能，可满足 \(\num{11000}\) 个三口之家提供一年的正常用电，可燃煤消耗 \(\qty{7150}{t}\)，减少二氧化碳排放 \(\qty{17300}{t}\)、二氧化硫排放 \(\qty{120}{t}\)、氮氧化物排放 \(\qty{180}{t}\)。整理该算例中的年度发电量和减排指标。
+\begin{problem}[5.5s-172 机组年发电量与减排量]\label{exer:calc_03_wind_p040_01}
+东方风电 5.5s-172 型永磁直驱风电机组单机容量为 \(\qty{5}{MW}\)，叶轮直径为 \(\qty{172}{m}\)。在设计风速下，单台机组每年可输出 \(2200 \times 10^4\ \unit{kWh}\) 电能，可满足 \(\num{11000}\) 个三口之家提供一年的正常用电，可燃煤消耗 \(\qty{7150}{t}\)，减少二氧化碳排放 \(\qty{17300}{t}\)、二氧化硫排放 \(\qty{120}{t}\)、氮氧化物排放 \(\qty{180}{t}\)。整理该算例中的年度发电量和减排指标。
 \end{problem}
 
 \begin{solution}
-课件已经给出计算结果，本题按指标归纳：
 \begin{equation*}
 \begin{aligned}
 E_{\text{年}} &= 2200 \times 10^4\ \unit{kWh},\\
@@ -316,16 +313,14 @@ m_{SO_2} &= \qty{120}{t},\\
 m_{NO_x} &= \qty{180}{t}.
 \end{aligned}
 \end{equation*}
-课件未列出推导用的年利用小时数或负荷数据，因此这里只保留课件给出的结果。
 \end{solution}
 
 % index: calc_03_wind_p041_01 | source=others/03_风力发电.pdf | page=41 | slide=风力发电机组选型和布置 | status=checked
 \begin{problem}[V236-15.0 MW 机组年发电量与减排量]\label{exer:calc_03_wind_p041_01}
-Vestas V236-15.0 MW 海上风电机组单机容量为 \(\qty{15}{MW}\)，风轮直径为 \(\qty{236}{m}\)，扫风面积超过 \(\qty{43000}{m^2}\)，叶片长度为 \(\qty{115.5}{m}\)。课件给出其发电量每年 \(\qty{80}{GWh}\)，可满足约 \(\num{20000}\) 个欧洲家庭用电，每年可减少超过 \(\qty{38000}{t}\) 二氧化碳。整理该算例。
+Vestas V236-15.0 MW 海上风电机组单机容量为 \(\qty{15}{MW}\)，风轮直径为 \(\qty{236}{m}\)，扫风面积超过 \(\qty{43000}{m^2}\)，叶片长度为 \(\qty{115.5}{m}\)。其发电量每年 \(\qty{80}{GWh}\)，可满足约 \(\num{20000}\) 个欧洲家庭用电，每年可减少超过 \(\qty{38000}{t}\) 二氧化碳。整理该算例。
 \end{problem}
 
 \begin{solution}
-课件给出的年度指标为：
 \begin{equation*}
 \begin{aligned}
 P_{\text{额定}} &= \qty{15}{MW},\\
@@ -336,7 +331,6 @@ N_{\text{家庭}} &\approx \num{20000},\\
 m_{CO_2} &> \qty{38000}{t}.
 \end{aligned}
 \end{equation*}
-该页未给容量系数或折算过程，不能由课件信息继续复算。
 \end{solution}
 
 % index: calc_03_wind_p060_01 | source=others/03_风力发电.pdf | page=60 | slide=风力发电能量转换过程 | status=checked
@@ -345,7 +339,7 @@ m_{CO_2} &> \qty{38000}{t}.
 \end{problem}
 
 \begin{solution}
-课件给出的功率链为：
+功率链为：
 \begin{equation*}
 \begin{aligned}
 P_W &= \frac{1}{2}\rho A v^3,\\
@@ -384,7 +378,7 @@ C_p
 \end{problem}
 
 \begin{solution}
-课件给出的有用功率表达式为：
+有用功率表达式为：
 \begin{equation}
 P = 0.5 C_p \rho S V^3.
 \end{equation}
@@ -397,7 +391,7 @@ P = 0.5 C_p \rho S V^3.
 \end{problem}
 
 \begin{solution}
-课件给出的功率公式为：
+功率公式为：
 \begin{equation}
 P = 0.5 C_p \rho S V_1^3
   = 0.5 C_p \rho \pi R^2 V_1^3.
@@ -430,7 +424,7 @@ I = \qty{100}{mA.h} \times 0.2C = \qty{20}{mA}.
 \end{problem}
 
 \begin{solution}
-课件给出的计算公式为：
+计算公式为：
 \begin{equation}
 P = U \cdot I.
 \end{equation}
@@ -443,7 +437,7 @@ P = U \cdot I.
 \end{problem}
 
 \begin{solution}
-课件给出的充电效率公式为：
+充电效率公式为：
 \begin{equation}
 \eta_{\text{充电}}
 = \frac{\text{放电对外输出电量}}{\text{充电至初始状态所需电量}}
